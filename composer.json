@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "DBP\\API\\Server\\": "src/"
+            "App\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DBP\\API\\Server\\Tests\\": "tests/"
+            "App\\Tests\\": "tests/"
         }
     },
     "replace": {

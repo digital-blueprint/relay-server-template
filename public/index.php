@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use DBP\API\Server\Kernel;
+use App\Kernel;
 use Symfony\Component\ErrorHandler\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
