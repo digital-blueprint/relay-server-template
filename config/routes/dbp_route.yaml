@@ -1,0 +1,2 @@
+DbpCoreBundle:
+    resource: "@DbpCoreBundle/Resources/config/routing.yaml"
