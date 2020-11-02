@@ -6,6 +6,8 @@ the symfony app.
 ## Setup
 
 * `sudo apt install docker-compose` to install docker-compose on Debian/Ubuntu
+* `sudo ./build.sh` - to build the docker images and install the PHP dependencies
+* `sudo docker-compose up` - to run the server: http://127.0.0.1:8000
 
 ## Running the Server
 
@@ -17,7 +19,7 @@ the symfony app.
 
 ## Executing Symfony commands
 
-* `./run` to start a shell in the php-fpm container.
+* `./run.sh` to start a shell in the php-fpm container.
 * After this you can run symfony/composer commands like:
   * `./bin/console debug:config`
   * `composer install`
