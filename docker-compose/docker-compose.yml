@@ -21,17 +21,6 @@ services:
       - ./php-fpm/php-ini-overrides.ini:/etc/php/7.3/fpm/conf.d/99-overrides.ini
       - ./php-fpm/php-fpm-overrides.conf:/etc/php/7.3/fpm/pool.d/z-overrides.conf
 
-  messenger-worker:
-    environment:
-      - TERM_PROGRAM=Hyper  # force colors for the symfony dumper
-    build:
-      context: php-fpm
-    working_dir: /application
-    entrypoint: ./bin/console messenger:consume async
-    volumes:
-      - ..:/application
-      - ./php-fpm/php-ini-overrides.ini:/etc/php/7.3/cli/conf.d/99-overrides.ini
-
   redis:
     image: "redis"
 
