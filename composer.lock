@@ -321,7 +321,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.tugraz.at:dbp/middleware/dbp-api/api-core-bundle.git",
-                "reference": "7badee4fce32420fba17b8eb430695dccb0c1e27"
+                "reference": "c5477faf3f9b579ecaf71bfdc7b7192dbabe1b3a"
             },
             "require": {
                 "adldap2/adldap2": "^10.0",
@@ -399,7 +399,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2020-10-20T13:16:44+00:00"
+            "time": "2020-11-02T09:01:58+00:00"
         },
         {
             "name": "dbp/api-starter-bundle",
