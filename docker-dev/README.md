@@ -7,7 +7,6 @@ the symfony app.
 
 * `sudo apt install docker-compose` to install docker-compose on Debian/Ubuntu
 * `sudo ./build.sh` - to build the docker images and install the PHP dependencies
-  * You need to enter your GitLab credentials twice in the process
 * `sudo docker-compose up` - to run the server: http://127.0.0.1:8000
 
 ## Running the Server
