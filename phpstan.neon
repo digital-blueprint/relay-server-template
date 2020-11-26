@@ -8,7 +8,7 @@ parameters:
         - src
         - tests
     bootstrapFiles:
-        - bin/.phpunit/phpunit-8-0/vendor/autoload.php
+        - bin/.phpunit/phpunit-9-0/vendor/autoload.php
     excludes_analyse:
         - tests/bootstrap.php
         - src/Swagger/DocumentationNormalizer.php
