@@ -21,7 +21,7 @@ class MyCustomPersonProvider implements PersonProviderInterface
         return [];
     }
 
-    public function getPerson(string $id, bool $full): Person
+    public function getPerson(string $id): Person
     {
         // TODO: Implement getPerson() method.
         return new Person();
