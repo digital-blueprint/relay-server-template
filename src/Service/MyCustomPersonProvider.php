@@ -2,46 +2,56 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace App\Service;
 
 use DBP\API\CoreBundle\Entity\Person;
 use DBP\API\CoreBundle\Service\PersonProviderInterface;
+use Symfony\Component\Security\Core\Security;
 
 class MyCustomPersonProvider implements PersonProviderInterface
 {
+    private $security;
+
+    public function __construct(Security $security)
+    {
+        $this->security = $security;
+    }
+
     public function getPersons(array $filters): array
     {
-        // TODO: Implement getPersons() method.
-        return [];
+        return [$this->getCurrentPerson()];
     }
 
     public function getPersonsByNameAndBirthday(string $givenName, string $familyName, \DateTime $birthDay): array
     {
-        // TODO: Implement getPersonsByNameAndBirthday() method.
         return [];
     }
 
     public function getPerson(string $id): Person
     {
-        // TODO: Implement getPerson() method.
-        return new Person();
+        $person = new Person();
+        $person->setIdentifier($id);
+        $person->setGivenName('John');
+        $person->setFamilyName('Doe');
+        $person->setEmail('john.doe@example.com');
+
+        return $person;
     }
 
     public function getCurrentPerson(): Person
     {
-        // TODO: Implement getCurrentPerson() method.
-        return new Person();
+        $user = $this->security->getUser();
+
+        return $this->getPerson($user->getUsername());
     }
 
     public function getPersonForExternalService(string $service, string $serviceID): Person
     {
-        // TODO: Implement getPersonForExternalService() method.
         return new Person();
     }
 
     public function getRolesForScopes(array $scopes): array
     {
-        // TODO: Implement getRolesForScopes() method.
         return [];
     }
 }
