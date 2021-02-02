@@ -38,4 +38,10 @@ class MyCustomPersonProvider implements PersonProviderInterface
         // TODO: Implement getPersonForExternalService() method.
         return new Person();
     }
+
+    public function getRolesForScopes(array $scopes): array
+    {
+        // TODO: Implement getRolesForScopes() method.
+        return [];
+    }
 }
