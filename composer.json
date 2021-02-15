@@ -3,6 +3,7 @@
     "license": "AGPL-3.0-or-later",
     "require": {
         "php": "^7.3",
+        "api-platform/core": "<2.6",
         "dbp/api-core-bundle": "@dev",
         "dbp/api-starter-bundle": "@dev",
         "symfony/apache-pack": "^1.0",
