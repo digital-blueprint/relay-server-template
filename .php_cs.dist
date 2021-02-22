@@ -3,7 +3,6 @@
 $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__)
     ->exclude('var')
-    ->exclude('bundles')
 ;
 
 return PhpCsFixer\Config::create()
@@ -12,6 +11,8 @@ return PhpCsFixer\Config::create()
         '@PHP70Migration' => true,
         '@PHP71Migration' => true,
         '@PHP73Migration' => true,
+        '@DoctrineAnnotation' => true,
+        'doctrine_annotation_array_assignment' => ['operator' => '='],
         'array_syntax' => ['syntax' => 'short'],
         'yoda_style' => false,
         'strict_comparison' => true,
