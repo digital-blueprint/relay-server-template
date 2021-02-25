@@ -224,7 +224,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.tugraz.at:dbp/middleware/dbp-api/api-core-bundle.git",
-                "reference": "db2c221338c234b762192da66bf9d9f33b4e2662"
+                "reference": "3d6767a82ed493a37bd7763e5cfb34e2dac1b1a7"
             },
             "require": {
                 "api-platform/core": "<2.6",
@@ -300,7 +300,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2021-02-22T10:43:38+00:00"
+            "time": "2021-02-22T12:56:47+00:00"
         },
         {
             "name": "dbp/api-starter-bundle",
@@ -308,11 +308,12 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.tugraz.at:dbp/middleware/dbp-api/api-starter-bundle.git",
-                "reference": "a953e2ae42154c9762d582ea3d2a0e8615b8a890"
+                "reference": "eac492187ecc4aef7ec219ac8be0b824c51339b6"
             },
             "require": {
                 "api-platform/core": "^2.5",
                 "dbp/api-core-bundle": "dev-main",
+                "ext-json": "*",
                 "php": "^7.3",
                 "symfony/framework-bundle": "^4.1.12"
             },
@@ -320,6 +321,8 @@
                 "friendsofphp/php-cs-fixer": "^2.16",
                 "phpstan/phpstan": "^0.12.33",
                 "phpstan/phpstan-phpunit": "^0.12.13",
+                "symfony/browser-kit": "^4.4",
+                "symfony/http-client": "^4.4",
                 "symfony/phpunit-bridge": "^4.4",
                 "vimeo/psalm": "^4.2.1"
             },
@@ -365,7 +368,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2021-02-22T12:41:27+00:00"
+            "time": "2021-02-25T10:04:09+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -6748,16 +6751,16 @@
         },
         {
             "name": "felixfbecker/language-server-protocol",
-            "version": "v1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/felixfbecker/php-language-server-protocol.git",
-                "reference": "85e83cacd2ed573238678c6875f8f0d7ec699541"
+                "reference": "9d846d1f5cf101deee7a61c8ba7caa0a975cd730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/felixfbecker/php-language-server-protocol/zipball/85e83cacd2ed573238678c6875f8f0d7ec699541",
-                "reference": "85e83cacd2ed573238678c6875f8f0d7ec699541",
+                "url": "https://api.github.com/repos/felixfbecker/php-language-server-protocol/zipball/9d846d1f5cf101deee7a61c8ba7caa0a975cd730",
+                "reference": "9d846d1f5cf101deee7a61c8ba7caa0a975cd730",
                 "shasum": ""
             },
             "require": {
@@ -6798,9 +6801,9 @@
             ],
             "support": {
                 "issues": "https://github.com/felixfbecker/php-language-server-protocol/issues",
-                "source": "https://github.com/felixfbecker/php-language-server-protocol/tree/v1.5.0"
+                "source": "https://github.com/felixfbecker/php-language-server-protocol/tree/1.5.1"
             },
-            "time": "2020-10-23T13:55:30+00:00"
+            "time": "2021-02-22T14:02:09+00:00"
         },
         {
             "name": "friendsofphp/php-cs-fixer",
