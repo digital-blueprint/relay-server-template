@@ -25,6 +25,9 @@
     "brick/math": {
         "version": "0.9.1"
     },
+    "composer/package-versions-deprecated": {
+        "version": "1.11.99.1"
+    },
     "composer/semver": {
         "version": "3.2.2"
     },
