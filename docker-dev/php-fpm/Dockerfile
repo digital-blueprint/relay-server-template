@@ -50,8 +50,6 @@ ENV PATH "/home/user/.local/bin:${PATH}"
 
 USER user
 
-RUN git config --global url."https://gitlab.tugraz.at/".insteadOf "git@gitlab.tugraz.at:"
-
 CMD ["/usr/sbin/php-fpm7.3", "-O" ]
 EXPOSE 9000
 WORKDIR "/application"

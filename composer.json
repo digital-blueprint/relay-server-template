@@ -16,11 +16,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@gitlab.tugraz.at:dbp/middleware/dbp-api/api-core-bundle.git"
+            "url": "https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-core-bundle.git"
         },
         {
             "type": "vcs",
-            "url": "git@gitlab.tugraz.at:dbp/middleware/dbp-api/api-starter-bundle.git"
+            "url": "https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-starter-bundle.git"
         }
     ],
     "config": {
