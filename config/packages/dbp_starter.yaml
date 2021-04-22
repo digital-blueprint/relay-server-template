@@ -1,0 +1,2 @@
+dbp_starter:
+  secret_token: '%env(STARTER_SECRET_TOKEN)%'

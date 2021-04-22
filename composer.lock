@@ -226,7 +226,7 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-core-bundle.git",
-                "reference": "6f3bf973ad3374ab018a826164f00358e057e404"
+                "reference": "7a6d413cc8e43176945aa6d2a564441990b80cc4"
             },
             "require": {
                 "api-platform/core": "^2.6.3",
@@ -238,7 +238,6 @@
                 "nelmio/cors-bundle": "^2.1.0",
                 "php": "^7.3",
                 "phpdocumentor/reflection-docblock": "^3.0 || ^4.0 || ^5.0",
-                "psr/link": "1.0",
                 "symfony/asset": "*",
                 "symfony/config": "^4.4",
                 "symfony/expression-language": "*",
@@ -303,7 +302,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2021-04-15T09:51:39+00:00"
+            "time": "2021-04-22T09:45:52+00:00"
         },
         {
             "name": "dbp/api-starter-bundle",
@@ -311,7 +310,7 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-starter-bundle.git",
-                "reference": "1e233d32f8ead03e21b82f909b21de9d6da58dfb"
+                "reference": "aa6539867455bf8cb6f4b16b7ea1bd95f6d5aae4"
             },
             "require": {
                 "api-platform/core": "^2.5",
@@ -371,7 +370,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2021-04-15T10:26:19+00:00"
+            "time": "2021-04-22T13:21:44+00:00"
         },
         {
             "name": "doctrine/annotations",
