@@ -26,6 +26,7 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
         php7.3-opcache \
         php7.3-readline \
         php7.3-xml \
+        php7.3-intl \
         php7.3-zip \
         php7.3-redis \
         php7.3-fpm \
