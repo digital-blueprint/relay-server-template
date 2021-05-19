@@ -4,8 +4,8 @@ This repository can be used as a template/starting point for your own API instan
 It consists of a minimally configures Symfony application and development environment
 and includes/integrates:
 
-* The [dbp/api-core-bundle](https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-core-bundle): Which provides authentication, some same base end points and entities and configuration for [api-platform](https://api-platform.com/)
-* The [dbp/api-starter-bundle](https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-starter-bundle): Which acts as a template for creating new bundles as
+* The [dbp/api-core-bundle](https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle): Which provides authentication, some same base end points and entities and configuration for [api-platform](https://api-platform.com/)
+* The [dbp/api-starter-bundle](https://gitlab.tugraz.at/dbp/dbp-api/api-starter-bundle): Which acts as a template for creating new bundles as
   we as an example for what can be done in a bundle.
 * A docker-compose based development environment
 * Linter/Unittest integration

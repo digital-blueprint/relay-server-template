@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0eaab40bd6e1990a5a489e0f5e78de42",
+    "content-hash": "b645c9d169be4edf2c25919e106535bc",
     "packages": [
         {
             "name": "api-platform/core",
@@ -225,7 +225,7 @@
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-core-bundle.git",
+                "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle.git",
                 "reference": "7ee0cb4d5e73b2926070d6c8d7e4213367b86e8c"
             },
             "require": {
@@ -252,7 +252,7 @@
                 "web-token/jwt-signature-algorithm-rsa": "^2.1"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.17",
+                "friendsofphp/php-cs-fixer": "^3.0",
                 "phpstan/phpstan": "^0.12.33",
                 "phpstan/phpstan-phpunit": "^0.12.13",
                 "symfony/browser-kit": "^5.2",
@@ -293,7 +293,7 @@
                     "@php vendor/bin/php-cs-fixer --ansi fix"
                 ],
                 "cs": [
-                    "@php vendor/bin/php-cs-fixer --ansi fix --dry-run --diff --diff-format=udiff"
+                    "@php vendor/bin/php-cs-fixer --ansi fix --dry-run --diff"
                 ],
                 "coverage": [
                     "@php vendor/bin/simple-phpunit --coverage-html _coverage"
@@ -309,7 +309,7 @@
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-starter-bundle.git",
+                "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-starter-bundle.git",
                 "reference": "12182ca139a35339813b15448d7800e87288e870"
             },
             "require": {
@@ -320,7 +320,7 @@
                 "symfony/framework-bundle": "^5.2"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.16",
+                "friendsofphp/php-cs-fixer": "^3.0",
                 "phpstan/phpstan": "^0.12.33",
                 "phpstan/phpstan-phpunit": "^0.12.13",
                 "symfony/browser-kit": "^5.2",
@@ -361,7 +361,7 @@
                     "@php vendor/bin/php-cs-fixer --ansi fix"
                 ],
                 "cs": [
-                    "@php vendor/bin/php-cs-fixer --ansi fix --dry-run --diff --diff-format=udiff"
+                    "@php vendor/bin/php-cs-fixer --ansi fix --dry-run --diff"
                 ],
                 "coverage": [
                     "@php vendor/bin/simple-phpunit --coverage-html _coverage"
