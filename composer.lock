@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b645c9d169be4edf2c25919e106535bc",
+    "content-hash": "4b0a07cbdc538d8109ecd868ee552bf0",
     "packages": [
         {
             "name": "api-platform/core",
@@ -222,11 +222,11 @@
         },
         {
             "name": "dbp/api-core-bundle",
-            "version": "dev-main",
+            "version": "v0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle.git",
-                "reference": "2178ce20d38a06d941e0b1a5bfeced8b50ced5b0"
+                "reference": "eae0d8ef3a13b728ffb11200eccc360f450bcb12"
             },
             "require": {
                 "api-platform/core": "^2.6.3",
@@ -260,7 +260,6 @@
                 "symfony/phpunit-bridge": "^5.2",
                 "vimeo/psalm": "^4.4"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -296,25 +295,25 @@
                     "@php vendor/bin/php-cs-fixer --ansi fix --dry-run --diff"
                 ],
                 "coverage": [
-                    "@php vendor/bin/simple-phpunit --coverage-html _coverage"
+                    "@php -dxdebug.mode=coverage vendor/bin/simple-phpunit --coverage-html _coverage"
                 ]
             },
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2021-05-29T12:07:29+00:00"
+            "time": "2021-07-06T12:22:24+00:00"
         },
         {
             "name": "dbp/api-starter-bundle",
-            "version": "dev-main",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-starter-bundle.git",
-                "reference": "48fa577dfd2453569616461526d1f8491daf1921"
+                "reference": "7b6b6ceba3f536ee5533ff2702fb691ef72caf3d"
             },
             "require": {
                 "api-platform/core": "^2.5",
-                "dbp/api-core-bundle": "dev-main",
+                "dbp/api-core-bundle": "^0.1.3",
                 "ext-json": "*",
                 "php": "^7.3",
                 "symfony/framework-bundle": "^5.2"
@@ -328,7 +327,6 @@
                 "symfony/phpunit-bridge": "^5.2",
                 "vimeo/psalm": "^4.2.1"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -370,7 +368,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2021-05-25T14:46:55+00:00"
+            "time": "2021-07-06T13:18:24+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -8320,10 +8318,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dbp/api-core-bundle": 20,
-        "dbp/api-starter-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
