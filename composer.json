@@ -24,6 +24,10 @@
         }
     ],
     "config": {
+        "preferred-install": {
+            "dbp/*": "source",
+            "*": "dist"
+        },
         "sort-packages": true,
         "platform": {
             "php": "7.3"
