@@ -1,4 +1,5 @@
 {
+    "name": "dbp/api-server-template",
     "type": "project",
     "license": "AGPL-3.0-or-later",
     "require": {
