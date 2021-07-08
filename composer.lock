@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b0a07cbdc538d8109ecd868ee552bf0",
+    "content-hash": "d11157d268ae93c13174e23ff9da83da",
     "packages": [
         {
             "name": "api-platform/core",
@@ -222,11 +222,11 @@
         },
         {
             "name": "dbp/api-core-bundle",
-            "version": "v0.1.3",
+            "version": "v0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle.git",
-                "reference": "eae0d8ef3a13b728ffb11200eccc360f450bcb12"
+                "reference": "2f3ecf2b90b42a3cef145b733d60ddd99e4de5ce"
             },
             "require": {
                 "api-platform/core": "^2.6.3",
@@ -301,7 +301,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2021-07-06T12:22:24+00:00"
+            "time": "2021-07-08T08:08:43+00:00"
         },
         {
             "name": "dbp/api-starter-bundle",
@@ -8328,5 +8328,5 @@
     "platform-overrides": {
         "php": "7.3"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
