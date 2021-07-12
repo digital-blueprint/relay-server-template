@@ -1,4 +1,4 @@
-image: registry.gitlab.tugraz.at/dbp/dbp-api/api-server-template/main:v1
+image: registry.gitlab.tugraz.at/dbp/dbp-api/api-server-template/main:v2
 
 before_script:
   - 'git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.tugraz.at/".insteadOf "git@gitlab.tugraz.at:"'
@@ -14,6 +14,7 @@ cache:
 
 stages:
   - test
+  - deploy
 
 .test_defaults: &test_defaults
   script:
@@ -62,3 +63,33 @@ cs-fixer:
     - sudo update-alternatives --set php /usr/bin/php7.4
     - composer install
     - composer run cs
+
+.deploy_defaults: &deploy_defaults
+  needs: ["test-php7.3", "test-php7.4"]
+  except:
+    - schedules
+  stage: deploy
+  script:
+    - sudo update-alternatives --set php /usr/bin/php7.3
+    # Add ssh key
+    - mkdir -p ~/.ssh
+    - echo "${DEPLOY_KEY}" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -t rsa "${DEPLOY_HOST}" >> ~/.ssh/known_hosts
+    # Deploy
+    - dep deploy "${CI_ENVIRONMENT_NAME}"
+    - echo "Deployed to ${CI_ENVIRONMENT_URL}"
+    # Simple health check
+    - curl --max-time 10 --retry 3 --output /dev/null --silent --show-error --fail --location "${CI_ENVIRONMENT_URL}"
+
+deploy_development:
+  only:
+    refs:
+      - main
+  environment:
+    name: development
+    url: https://mw-dev.tugraz.at
+  variables:
+    DEPLOY_HOST: mw01-dev.tugraz.at
+    DEPLOY_KEY: "$DEPLOY_SSH_KEY"
+  <<: *deploy_defaults

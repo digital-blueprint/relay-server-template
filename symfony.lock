@@ -40,6 +40,15 @@
     "dbp/api-starter-bundle": {
         "version": "dev-main"
     },
+    "deployer/deployer": {
+        "version": "v6.8.0"
+    },
+    "deployer/phar-update": {
+        "version": "v2.2.0"
+    },
+    "deployer/recipes": {
+        "version": "6.2.2"
+    },
     "dnoegel/php-xdg-base-dir": {
         "version": "v0.1.1"
     },
@@ -168,6 +177,9 @@
     },
     "phpstan/phpstan-phpunit": {
         "version": "0.12.16"
+    },
+    "pimple/pimple": {
+        "version": "v3.4.0"
     },
     "psr/cache": {
         "version": "1.0.1"
