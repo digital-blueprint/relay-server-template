@@ -15,6 +15,7 @@ cache:
 stages:
   - test
   - deploy
+  - e2e
 
 .test_defaults: &test_defaults
   script:
@@ -93,3 +94,14 @@ deploy_development:
     DEPLOY_HOST: mw01-dev.tugraz.at
     DEPLOY_KEY: "$DEPLOY_SSH_KEY"
   <<: *deploy_defaults
+
+e2e_tests:
+  only:
+    refs:
+      - main
+  variables:
+    E2E_PROJECT: api
+  stage: e2e
+  trigger:
+    project: dbp/e2e-tests
+    strategy: depend
