@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e19a0f4466a3af0a7c0370facd1f864",
+    "content-hash": "0241681131fc06b29cb69931481a5c7c",
     "packages": [
         {
             "name": "api-platform/core",
@@ -226,7 +226,7 @@
             "version": "v0.1.6",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle.git",
+                "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle",
                 "reference": "00152673fe78d63feeea06e9d24a2a5c991bbe9e"
             },
             "require": {
@@ -267,38 +267,7 @@
                     "DBP\\API\\CoreBundle\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "DBP\\API\\CoreBundle\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "@php vendor/bin/simple-phpunit"
-                ],
-                "phpstan": [
-                    "@php vendor/bin/simple-phpunit --atleast-version 0",
-                    "@php vendor/bin/phpstan analyze --ansi"
-                ],
-                "psalm": [
-                    "@php vendor/bin/simple-phpunit --atleast-version 0",
-                    "@php vendor/bin/psalm"
-                ],
-                "lint": [
-                    "@composer run cs",
-                    "@composer run phpstan",
-                    "@composer run psalm"
-                ],
-                "cs-fix": [
-                    "@php vendor/bin/php-cs-fixer --ansi fix"
-                ],
-                "cs": [
-                    "@php vendor/bin/php-cs-fixer --ansi fix --dry-run --diff"
-                ],
-                "coverage": [
-                    "@php -dxdebug.mode=coverage vendor/bin/simple-phpunit --coverage-html _coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "AGPL-3.0-or-later"
             ],

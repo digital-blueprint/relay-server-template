@@ -13,12 +13,6 @@
         "symfony/monolog-bundle": "^3.5",
         "symfony/yaml": "^5.2"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle.git"
-        }
-    ],
     "config": {
         "preferred-install": {
             "dbp/*": "source",
