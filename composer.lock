@@ -229,12 +229,6 @@
                 "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle.git",
                 "reference": "00152673fe78d63feeea06e9d24a2a5c991bbe9e"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.tugraz.at/api/v4/projects/dbp%2Fdbp-api%2Fapi-core-bundle/repository/archive.zip?sha=00152673fe78d63feeea06e9d24a2a5c991bbe9e",
-                "reference": "00152673fe78d63feeea06e9d24a2a5c991bbe9e",
-                "shasum": ""
-            },
             "require": {
                 "api-platform/core": "^2.6.3",
                 "doctrine/annotations": "^1.0",
@@ -308,9 +302,6 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "support": {
-                "issues": "https://gitlab.tugraz.at/api/v4/projects/8296/issues"
-            },
             "time": "2021-07-12T00:17:21+00:00"
         },
         {
@@ -320,12 +311,6 @@
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-starter-bundle.git",
                 "reference": "7b6b6ceba3f536ee5533ff2702fb691ef72caf3d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.tugraz.at/api/v4/projects/dbp%2Fdbp-api%2Fapi-starter-bundle/repository/archive.zip?sha=7b6b6ceba3f536ee5533ff2702fb691ef72caf3d",
-                "reference": "7b6b6ceba3f536ee5533ff2702fb691ef72caf3d",
-                "shasum": ""
             },
             "require": {
                 "api-platform/core": "^2.5",
@@ -384,10 +369,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "support": {
-                "issues": "https://gitlab.tugraz.at/api/v4/projects/7436/issues"
-            },
-            "time": "2021-07-06T15:18:24+02:00"
+            "time": "2021-07-06T13:18:24+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -7334,16 +7316,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.92",
+            "version": "0.12.93",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "64d4c5dc8ea96972bc18432d137a330239a5d2b2"
+                "reference": "7b7602f05d340ffa418c59299f8c053ac6c3e7ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/64d4c5dc8ea96972bc18432d137a330239a5d2b2",
-                "reference": "64d4c5dc8ea96972bc18432d137a330239a5d2b2",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/7b7602f05d340ffa418c59299f8c053ac6c3e7ea",
+                "reference": "7b7602f05d340ffa418c59299f8c053ac6c3e7ea",
                 "shasum": ""
             },
             "require": {
@@ -7374,7 +7356,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.92"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.93"
             },
             "funding": [
                 {
@@ -7394,7 +7376,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-10T13:53:49+00:00"
+            "time": "2021-07-20T10:49:53+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
