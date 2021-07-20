@@ -40,7 +40,7 @@ host('development')
     ->set('KEYCLOAK_CLIENT_ID', 'auth-dev-mw-dev')
     ->set('KEYCLOAK_FRONTEND_CLIENT_ID', 'auth-dev-mw-frontend')
     ->set('rsync', $rsync_config)
-    ->set('rsync_src', __DIR__)
+    ->set('rsync_src', __DIR__.'/../')
     ->set('rsync_dest', '{{release_path}}')
     ->set('cachetool', '127.0.0.1:9001');
 
