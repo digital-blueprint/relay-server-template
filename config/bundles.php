@@ -12,5 +12,6 @@ return [
     Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
     Symfony\Bundle\WebProfilerBundle\WebProfilerBundle::class => ['dev' => true],
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true],
+    DBP\API\KeycloakBundle\DbpKeycloakBundle::class => ['all' => true],
     DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 ];

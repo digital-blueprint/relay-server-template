@@ -37,6 +37,9 @@
     "dbp/api-core-bundle": {
         "version": "dev-main"
     },
+    "dbp/api-keycloak-bundle": {
+        "version": "dev-main"
+    },
     "dnoegel/php-xdg-base-dir": {
         "version": "v0.1.1"
     },

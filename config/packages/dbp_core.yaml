@@ -1,12 +1,3 @@
 dbp_core:
-  keycloak:
-    server_url: '%env(KEYCLOAK_SERVER_URL)%'
-    realm: '%env(KEYCLOAK_REALM)%'
-    client_id: '%env(KEYCLOAK_CLIENT_ID)%'
-    client_secret: '%env(KEYCLOAK_CLIENT_SECRET)%'
-    audience: '%env(KEYCLOAK_AUDIENCE)%'
-    local_validation: '%env(bool:KEYCLOAK_LOCAL_VALIDATION)%'
-  api_docs:
-    keycloak_client_id: '%env(KEYCLOAK_FRONTEND_CLIENT_ID)%'
     build_info: '%env(APP_BUILDINFO)%'
     build_info_url: '%env(APP_BUILDINFO_URL)%'
