@@ -223,11 +223,11 @@
         },
         {
             "name": "dbp/api-core-bundle",
-            "version": "v0.1.7",
+            "version": "v0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle",
-                "reference": "3c805ba5d963849be0b07d6b5f28c2d22a01f3d3"
+                "reference": "d80dc0293652bce9a830403a26e5c0cda8d2a10e"
             },
             "require": {
                 "api-platform/core": "^2.6.3",
@@ -271,7 +271,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2021-07-22T08:56:16+00:00"
+            "time": "2021-07-29T10:18:16+00:00"
         },
         {
             "name": "dbp/api-keycloak-bundle",
