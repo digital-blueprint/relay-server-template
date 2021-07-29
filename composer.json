@@ -1,5 +1,5 @@
 {
-    "name": "dbp/api-server-template",
+    "name": "dbp/relay-server-template",
     "type": "project",
     "license": "AGPL-3.0-or-later",
     "require": {
