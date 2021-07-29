@@ -35,7 +35,7 @@ host('development')
     ->set('shared_dirs', ['var/log', 'var/sessions'])
     ->set('APP_ENV', 'prod')
     ->set('APP_DEBUG', '0')
-    ->set('APP_DEPLOYMENT_ENV', 'development')
+    ->set('API_DEPLOYMENT_ENV', 'development')
     ->set('KEYCLOAK_SERVER_URL', 'https://auth-dev.tugraz.at/auth')
     ->set('KEYCLOAK_CLIENT_ID', 'auth-dev-mw-dev')
     ->set('KEYCLOAK_FRONTEND_CLIENT_ID', 'auth-dev-mw-frontend')
@@ -52,7 +52,7 @@ task('build-custom', function () {
         'KEYCLOAK_CLIENT_SECRET' => getenv('KEYCLOAK_CLIENT_SECRET'),
         'APP_ENV' => $APP_ENV,
         'APP_DEBUG' => get('APP_DEBUG'),
-        'APP_DEPLOYMENT_ENV' => get('APP_DEPLOYMENT_ENV'),
+        'API_DEPLOYMENT_ENV' => get('API_DEPLOYMENT_ENV'),
         'KEYCLOAK_SERVER_URL' => get('KEYCLOAK_SERVER_URL'),
         'KEYCLOAK_CLIENT_ID' => get('KEYCLOAK_CLIENT_ID'),
         'KEYCLOAK_FRONTEND_CLIENT_ID' => get('KEYCLOAK_FRONTEND_CLIENT_ID'),
@@ -69,7 +69,7 @@ task('build-custom', function () {
 
     // Add build commit
     $commit = runLocally('git rev-parse --short HEAD');
-    runLocally("echo \"APP_BUILDINFO=${commit}\" >> .env.local");
+    runLocally("echo \"API_BUILDINFO=${commit}\" >> .env.local");
 
     // Add commit url to gitlab
     $remote = runLocally('git config --get remote.origin.url');
@@ -77,7 +77,7 @@ task('build-custom', function () {
     $parts['path'] = substr($parts['path'], 0, (strrpos($parts['path'], '.')));
     $base_url = $parts['scheme'].'://'.$parts['host'].$parts['path'];
     $build_url = $base_url.'/'.rawurlencode('commit').'/'.rawurlencode($commit);
-    runLocally("echo \"APP_BUILDINFO_URL=${build_url}\" >> .env.local");
+    runLocally("echo \"API_BUILDINFO_URL=${build_url}\" >> .env.local");
 
     // composer install and optimize
     runLocally('composer install --no-dev --classmap-authoritative');
