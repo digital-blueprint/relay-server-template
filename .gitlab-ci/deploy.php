@@ -35,7 +35,6 @@ host('development')
     ->set('shared_dirs', ['var/log', 'var/sessions'])
     ->set('APP_ENV', 'prod')
     ->set('APP_DEBUG', '0')
-    ->set('API_DEPLOYMENT_ENV', 'development')
     ->set('KEYCLOAK_SERVER_URL', 'https://auth-dev.tugraz.at/auth')
     ->set('KEYCLOAK_CLIENT_ID', 'auth-dev-mw-dev')
     ->set('KEYCLOAK_FRONTEND_CLIENT_ID', 'auth-dev-mw-frontend')
@@ -52,7 +51,6 @@ task('build-custom', function () {
         'KEYCLOAK_CLIENT_SECRET' => getenv('KEYCLOAK_CLIENT_SECRET'),
         'APP_ENV' => $APP_ENV,
         'APP_DEBUG' => get('APP_DEBUG'),
-        'API_DEPLOYMENT_ENV' => get('API_DEPLOYMENT_ENV'),
         'KEYCLOAK_SERVER_URL' => get('KEYCLOAK_SERVER_URL'),
         'KEYCLOAK_CLIENT_ID' => get('KEYCLOAK_CLIENT_ID'),
         'KEYCLOAK_FRONTEND_CLIENT_ID' => get('KEYCLOAK_FRONTEND_CLIENT_ID'),

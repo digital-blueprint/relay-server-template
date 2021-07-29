@@ -15,11 +15,7 @@ class Kernel extends BaseKernel
 
     protected function configureContainer(ContainerConfigurator $container): void
     {
-        // Ignore all errors in case we are not local/development. We disable some
-        // bundles in demo/prod which leads to unused config, which symfony fails over.
-        $ignoreErrors = !in_array($_ENV['API_DEPLOYMENT_ENV'], ['local', 'development'], true);
-
-        $container->import('../config/{packages}/*.yaml', null, $ignoreErrors);
+        $container->import('../config/{packages}/*.yaml');
         $container->import('../config/{packages}/'.$this->environment.'/*.yaml');
 
         if (is_file(\dirname(__DIR__).'/config/services.yaml')) {
