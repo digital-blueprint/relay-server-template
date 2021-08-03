@@ -1,4 +1,4 @@
-dbp_keycloak:
+dbp_relay_keycloak:
   server_url: '%env(KEYCLOAK_SERVER_URL)%'
   realm: '%env(KEYCLOAK_REALM)%'
   client_id: '%env(KEYCLOAK_CLIENT_ID)%'

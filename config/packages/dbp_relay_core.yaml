@@ -1,3 +1,3 @@
-dbp_core:
+dbp_relay_core:
     build_info: '%env(API_BUILDINFO)%'
     build_info_url: '%env(API_BUILDINFO_URL)%'
