@@ -89,7 +89,7 @@ deploy_development:
       - main
   environment:
     name: development
-    url: https://mw-dev.tugraz.at
+    url: https://api-template-dev.tugraz.at/
   variables:
     DEPLOY_HOST: mw01-dev.tugraz.at
     DEPLOY_KEY: "$DEPLOY_SSH_KEY"
