@@ -22,6 +22,9 @@
             "src/Entity/.gitignore"
         ]
     },
+    "brainmaestro/composer-git-hooks": {
+        "version": "v2.8.5"
+    },
     "brick/math": {
         "version": "0.9.2"
     },

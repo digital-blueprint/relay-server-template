@@ -48,10 +48,12 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts"
+            "@auto-scripts",
+            "cghooks add --ignore-lock"
         ],
         "post-update-cmd": [
-            "@auto-scripts"
+            "@auto-scripts",
+            "cghooks update"
         ],
         "test": [
             "@php bin/phpunit"
@@ -86,9 +88,15 @@
         "symfony": {
             "allow-contrib": false,
             "require": "^5.2"
+        },
+        "hooks": {
+            "pre-commit": [
+                "composer lint"
+            ]
         }
     },
     "require-dev": {
+        "brainmaestro/composer-git-hooks": "^2.8",
         "friendsofphp/php-cs-fixer": "^3.0",
         "phpstan/phpstan": "^0.12.7",
         "phpstan/phpstan-phpunit": "^0.12.6",
