@@ -4,6 +4,7 @@
     "license": "AGPL-3.0-or-later",
     "require": {
         "php": "^7.3",
+        "brainmaestro/composer-git-hooks": "^2.8",
         "dbp/relay-core-bundle": "^0.1.10",
         "dbp/relay-keycloak-bundle": "^0.1.1",
         "symfony/apache-pack": "^1.0",
@@ -96,7 +97,6 @@
         }
     },
     "require-dev": {
-        "brainmaestro/composer-git-hooks": "^2.8",
         "friendsofphp/php-cs-fixer": "^3.0",
         "phpstan/phpstan": "^0.12.7",
         "phpstan/phpstan-phpunit": "^0.12.6",
