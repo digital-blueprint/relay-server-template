@@ -37,8 +37,7 @@ host('development')
     ->set('APP_DEBUG', '0')
     ->set('KEYCLOAK_SERVER_URL', 'https://auth-dev.tugraz.at/auth')
     ->set('KEYCLOAK_REALM', 'tugraz-vpu')
-    ->set('KEYCLOAK_CLIENT_ID', 'auth-dev-mw-dev')
-    ->set('KEYCLOAK_FRONTEND_CLIENT_ID', 'auth-dev-mw-frontend')
+    ->set('KEYCLOAK_FRONTEND_CLIENT_ID', 'dbp-api-template-frontend')
     ->set('rsync', $rsync_config)
     ->set('rsync_src', __DIR__.'/../')
     ->set('rsync_dest', '{{release_path}}')
@@ -54,7 +53,6 @@ task('build-custom', function () {
         'APP_DEBUG' => get('APP_DEBUG'),
         'KEYCLOAK_SERVER_URL' => get('KEYCLOAK_SERVER_URL'),
         'KEYCLOAK_REALM' => get('KEYCLOAK_REALM'),
-        'KEYCLOAK_CLIENT_ID' => get('KEYCLOAK_CLIENT_ID'),
         'KEYCLOAK_FRONTEND_CLIENT_ID' => get('KEYCLOAK_FRONTEND_CLIENT_ID'),
     ];
 
