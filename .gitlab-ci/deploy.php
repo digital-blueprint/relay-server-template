@@ -15,6 +15,7 @@ $rsync_config = [
     'exclude' => [
         '.git',
         'deploy.php',
+        '_composer_cache',
     ],
     'exclude-file' => false,
     'include' => [],
