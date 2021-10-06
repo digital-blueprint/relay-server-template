@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40e5f05e6836c6efebf49ca7c37778b9",
+    "content-hash": "0fcda705499482a29528b74c258c748d",
     "packages": [
         {
             "name": "api-platform/core",
@@ -360,6 +360,43 @@
                 "AGPL-3.0-or-later"
             ],
             "time": "2021-09-13T08:02:44+00:00"
+        },
+        {
+            "name": "dbp/relay-frontend-bundle",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-frontend-bundle.git",
+                "reference": "bcf66052f0707101c332e412f50da83e93fb1a98"
+            },
+            "require": {
+                "api-platform/core": "^2.5",
+                "dbp/relay-core-bundle": "^0.1.11",
+                "ext-json": "*",
+                "php": "^7.3",
+                "symfony/framework-bundle": "^5.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpstan/phpstan": "^0.12.33",
+                "phpstan/phpstan-phpunit": "^0.12.13",
+                "symfony/browser-kit": "^5.2",
+                "symfony/http-client": "^5.2",
+                "symfony/monolog-bundle": "^3.7",
+                "symfony/phpunit-bridge": "^5.2",
+                "vimeo/psalm": "^4.2.1"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Dbp\\Relay\\FrontendBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "time": "2021-10-06T07:16:48+00:00"
         },
         {
             "name": "dbp/relay-keycloak-bundle",

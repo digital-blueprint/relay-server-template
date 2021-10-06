@@ -40,6 +40,9 @@
     "dbp/relay-core-bundle": {
         "version": "v0.1.10"
     },
+    "dbp/relay-frontend-bundle": {
+        "version": "v0.1.0"
+    },
     "dbp/relay-keycloak-bundle": {
         "version": "v0.1.0"
     },

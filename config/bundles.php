@@ -13,5 +13,6 @@ return [
     Nelmio\CorsBundle\NelmioCorsBundle::class => ['all' => true],
     ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle::class => ['all' => true],
     Dbp\Relay\KeycloakBundle\DbpRelayKeycloakBundle::class => ['all' => true],
+    Dbp\Relay\FrontendBundle\DbpRelayFrontendBundle::class => ['all' => true],
     Dbp\Relay\CoreBundle\DbpRelayCoreBundle::class => ['all' => true],
 ];
