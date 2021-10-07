@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40e5f05e6836c6efebf49ca7c37778b9",
+    "content-hash": "ebead725fb54071db3a8f299732686a9",
     "packages": [
         {
             "name": "api-platform/core",
@@ -299,6 +299,55 @@
             "time": "2021-08-15T20:50:18+00:00"
         },
         {
+            "name": "dbp/relay-auth-bundle",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git",
+                "reference": "3a0e46f0a5fa5dab921087dc422c86505af1d522"
+            },
+            "require": {
+                "dbp/relay-core-bundle": "^0.1.10",
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.0",
+                "kevinrob/guzzle-cache-middleware": "^3.3",
+                "php": "^7.3",
+                "symfony/framework-bundle": "^5.2",
+                "symfony/security-core": "^5.2",
+                "symfony/yaml": "^5.2",
+                "web-token/jwt-easy": "^2.1",
+                "web-token/jwt-signature-algorithm-rsa": "^2.1"
+            },
+            "require-dev": {
+                "brainmaestro/composer-git-hooks": "^2.8",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpstan/phpstan": "^0.12.33",
+                "phpstan/phpstan-phpunit": "^0.12.13",
+                "symfony/browser-kit": "^5.3",
+                "symfony/http-client": "^5.3",
+                "symfony/phpunit-bridge": "^5.2",
+                "vimeo/psalm": "^4.4"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "hooks": {
+                    "pre-commit": [
+                        "composer lint"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dbp\\Relay\\AuthBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "time": "2021-10-07T13:49:32+00:00"
+        },
+        {
             "name": "dbp/relay-core-bundle",
             "version": "v0.1.16",
             "source": {
@@ -360,47 +409,6 @@
                 "AGPL-3.0-or-later"
             ],
             "time": "2021-09-13T08:02:44+00:00"
-        },
-        {
-            "name": "dbp/relay-keycloak-bundle",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-keycloak-bundle",
-                "reference": "a7f0ade430e4dafacd745ac8acb63df1d1eea600"
-            },
-            "require": {
-                "dbp/relay-core-bundle": "^0.1.10",
-                "ext-json": "*",
-                "guzzlehttp/guzzle": "^7.0",
-                "kevinrob/guzzle-cache-middleware": "^3.3",
-                "php": "^7.3",
-                "symfony/framework-bundle": "^5.2",
-                "symfony/security-core": "^5.2",
-                "symfony/yaml": "^5.2",
-                "web-token/jwt-easy": "^2.1",
-                "web-token/jwt-signature-algorithm-rsa": "^2.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "phpstan/phpstan": "^0.12.33",
-                "phpstan/phpstan-phpunit": "^0.12.13",
-                "symfony/browser-kit": "^5.3",
-                "symfony/http-client": "^5.3",
-                "symfony/phpunit-bridge": "^5.2",
-                "vimeo/psalm": "^4.4"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "Dbp\\Relay\\KeycloakBundle\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "AGPL-3.0-or-later"
-            ],
-            "time": "2021-08-03T09:19:56+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -6292,7 +6300,7 @@
         },
         {
             "name": "web-token/jwt-checker",
-            "version": "v2.2.10",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-checker.git",
@@ -6348,7 +6356,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-checker/tree/v2.2.10"
+                "source": "https://github.com/web-token/jwt-checker/tree/v2.2.11"
             },
             "funding": [
                 {
@@ -6360,7 +6368,7 @@
         },
         {
             "name": "web-token/jwt-core",
-            "version": "v2.2.10",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-core.git",
@@ -6424,7 +6432,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-core/tree/v2.2.10"
+                "source": "https://github.com/web-token/jwt-core/tree/v2.2.11"
             },
             "funding": [
                 {
@@ -6436,7 +6444,7 @@
         },
         {
             "name": "web-token/jwt-easy",
-            "version": "v2.2.10",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-easy.git",
@@ -6509,7 +6517,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-easy/tree/v2.2.10"
+                "source": "https://github.com/web-token/jwt-easy/tree/v2.2.11"
             },
             "funding": [
                 {
@@ -6521,7 +6529,7 @@
         },
         {
             "name": "web-token/jwt-encryption",
-            "version": "v2.2.10",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-encryption.git",
@@ -6588,7 +6596,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-encryption/tree/v2.2.10"
+                "source": "https://github.com/web-token/jwt-encryption/tree/v2.2.11"
             },
             "funding": [
                 {
@@ -6600,7 +6608,7 @@
         },
         {
             "name": "web-token/jwt-signature",
-            "version": "v2.2.10",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-signature.git",
@@ -6664,7 +6672,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-signature/tree/v2.2.10"
+                "source": "https://github.com/web-token/jwt-signature/tree/v2.2.11"
             },
             "funding": [
                 {
@@ -6676,7 +6684,7 @@
         },
         {
             "name": "web-token/jwt-signature-algorithm-rsa",
-            "version": "v2.2.10",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-signature-algorithm-rsa.git",
@@ -6738,7 +6746,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-signature-algorithm-rsa/tree/v2.2.10"
+                "source": "https://github.com/web-token/jwt-signature-algorithm-rsa/tree/v2.2.11"
             },
             "funding": [
                 {

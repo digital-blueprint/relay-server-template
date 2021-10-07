@@ -26,7 +26,7 @@
         "version": "v2.8.5"
     },
     "brick/math": {
-        "version": "0.9.2"
+        "version": "0.9.3"
     },
     "composer/package-versions-deprecated": {
         "version": "1.11.99.1"
@@ -36,6 +36,9 @@
     },
     "composer/xdebug-handler": {
         "version": "1.4.4"
+    },
+    "dbp/relay-auth-bundle": {
+        "version": "v0.1.1"
     },
     "dbp/relay-core-bundle": {
         "version": "v0.1.10"
@@ -551,22 +554,22 @@
         "version": "3.18.2"
     },
     "web-token/jwt-checker": {
-        "version": "v2.2.10"
+        "version": "v2.2.11"
     },
     "web-token/jwt-core": {
-        "version": "v2.2.10"
+        "version": "v2.2.11"
     },
     "web-token/jwt-easy": {
-        "version": "v2.2.10"
+        "version": "v2.2.11"
     },
     "web-token/jwt-encryption": {
-        "version": "v2.2.10"
+        "version": "v2.2.11"
     },
     "web-token/jwt-signature": {
-        "version": "v2.2.10"
+        "version": "v2.2.11"
     },
     "web-token/jwt-signature-algorithm-rsa": {
-        "version": "v2.2.10"
+        "version": "v2.2.11"
     },
     "webmozart/assert": {
         "version": "1.9.1"

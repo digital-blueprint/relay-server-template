@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     Symfony\Bundle\FrameworkBundle\FrameworkBundle::class => ['all' => true],
     Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
@@ -12,6 +10,6 @@ return [
     Symfony\Bundle\SecurityBundle\SecurityBundle::class => ['all' => true],
     Nelmio\CorsBundle\NelmioCorsBundle::class => ['all' => true],
     ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle::class => ['all' => true],
-    Dbp\Relay\KeycloakBundle\DbpRelayKeycloakBundle::class => ['all' => true],
+    Dbp\Relay\AuthBundle\DbpRelayAuthBundle::class => ['all' => true],
     Dbp\Relay\CoreBundle\DbpRelayCoreBundle::class => ['all' => true],
 ];

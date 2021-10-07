@@ -5,8 +5,8 @@
     "require": {
         "php": "^7.3",
         "brainmaestro/composer-git-hooks": "^2.8",
+        "dbp/relay-auth-bundle": "^0.1.2",
         "dbp/relay-core-bundle": "^0.1.10",
-        "dbp/relay-keycloak-bundle": "^0.1.1",
         "symfony/apache-pack": "^1.0",
         "symfony/console": "^5.2",
         "symfony/dotenv": "^5.2",

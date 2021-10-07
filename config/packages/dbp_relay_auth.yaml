@@ -1,0 +1,8 @@
+dbp_relay_auth:
+  server_url: '%env(KEYCLOAK_SERVER_URL)%'
+  realm: '%env(KEYCLOAK_REALM)%'
+  remote_validation_client_id: '%env(KEYCLOAK_CLIENT_ID)%'
+  remote_validation_client_secret: '%env(KEYCLOAK_CLIENT_SECRET)%'
+  required_audience: '%env(KEYCLOAK_AUDIENCE)%'
+  remote_validation: '%env(bool:KEYCLOAK_REMOTE_VALIDATION)%'
+  frontend_client_id: '%env(KEYCLOAK_FRONTEND_CLIENT_ID)%'
