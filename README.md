@@ -1,5 +1,7 @@
 # DBP API Server Template
 
+[GitLab](https://gitlab.tugraz.at/dbp/relay/dbp-relay-server-template)
+
 This repository can be used as a template/starting point for your own API instance.
 It consists of a minimally configures Symfony application and development environment
 and includes/integrates:
