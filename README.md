@@ -13,7 +13,7 @@ and includes/integrates:
 ## Documentation
 
 The documentation is work in progress and currently exists in another repository which can be viewed here:
-https://api.tugraz.at/docs/index.html
+[Relay API Gateway](https://dbp-demo.tugraz.at/dev-guide/relay/)
 
 It will be moved into this repository in the near future.
 
