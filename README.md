@@ -32,6 +32,7 @@ git clone https://gitlab.tugraz.at/dbp/relay/dbp-relay-server-template.git relay
 cd relay-api
 
 # install dependencies (you need php and composer for this)
+# you can also do this in the dev docker container (see below docker-dev link)
 composer install
 ```
 
