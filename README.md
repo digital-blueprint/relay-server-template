@@ -26,4 +26,13 @@ It will be moved into this repository in the near future.
 
 ## Development
 
+```bash
+# clone git repository
+git clone https://gitlab.tugraz.at/dbp/relay/dbp-relay-server-template.git relay-api
+cd relay-api
+
+# install dependencies (you need php and composer for this)
+composer install
+```
+
 Please open [docker-dev/README.md](./docker-dev/README.md) for more information.
