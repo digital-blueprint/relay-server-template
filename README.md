@@ -24,6 +24,17 @@ It will be moved into this repository in the near future.
 * Copy the "api-starter-bundle" repo and rename everything
 * Add the new bundle to your API fork
 
+## Installation
+
+```bash
+# install relay-server-template to path "relay-api" (you need php and composer for this)
+composer create-project dbp/relay-server-template relay-api "dev-main"
+cd relay-api
+
+# install dependencies
+composer install
+```
+
 ## Development
 
 ```bash
