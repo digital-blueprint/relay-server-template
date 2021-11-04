@@ -214,6 +214,9 @@
     "spomky-labs/base64url": {
         "version": "v2.0.4"
     },
+    "symfony/amqp-messenger": {
+        "version": "v5.3.7"
+    },
     "symfony/apache-pack": {
         "version": "1.0",
         "recipe": {
@@ -279,6 +282,9 @@
     },
     "symfony/doctrine-bridge": {
         "version": "v4.4.16"
+    },
+    "symfony/doctrine-messenger": {
+        "version": "v5.3.10"
     },
     "symfony/dom-crawler": {
         "version": "v4.4.19"
@@ -350,6 +356,18 @@
     },
     "symfony/inflector": {
         "version": "v4.4.16"
+    },
+    "symfony/messenger": {
+        "version": "5.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "25e3c964d3aee480b3acc3114ffb7940c89edfed"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
     },
     "symfony/mime": {
         "version": "v4.4.16"
@@ -428,6 +446,9 @@
     },
     "symfony/property-info": {
         "version": "v5.3.4"
+    },
+    "symfony/redis-messenger": {
+        "version": "v5.3.10"
     },
     "symfony/routing": {
         "version": "4.2",
