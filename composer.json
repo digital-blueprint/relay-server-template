@@ -4,7 +4,6 @@
     "license": "AGPL-3.0-or-later",
     "require": {
         "php": "^7.3 || ^8.0",
-        "brainmaestro/composer-git-hooks": "^2.8",
         "dbp/relay-auth-bundle": "^0.1.4",
         "dbp/relay-core-bundle": "^0.1.16",
         "symfony/apache-pack": "^1.0",
@@ -49,12 +48,10 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts",
-            "cghooks add --ignore-lock"
+            "@auto-scripts"
         ],
         "post-update-cmd": [
-            "@auto-scripts",
-            "cghooks update"
+            "@auto-scripts"
         ],
         "test": [
             "@php bin/phpunit"
@@ -89,11 +86,6 @@
         "symfony": {
             "allow-contrib": false,
             "require": "^5.2"
-        },
-        "hooks": {
-            "pre-commit": [
-                "composer lint"
-            ]
         }
     },
     "require-dev": {
