@@ -86,7 +86,11 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "^5.2"
+            "require": "^5.2",
+            "endpoint": [
+                "flex://defaults",
+                "https://api.github.com/repos/digital-blueprint/symfony-recipes/contents/index.json?ref=flex/main"
+            ]
         }
     },
     "require-dev": {
