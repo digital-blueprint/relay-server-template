@@ -5,5 +5,10 @@
         "symfony/yaml": " ^5.0",
         "deployer/deployer": " ^6.4",
         "deployer/recipes": " ^6.2"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3"
+        }
     }
 }
