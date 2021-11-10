@@ -28,6 +28,8 @@ RUN apt-get update && apt-get install -y \
     php7.3-zip \
     php7.3-gmp \
     php7.3-xdebug \
+    php7.3-gd \
+    php7.3-mysql \
     php7.3-mbstring \
     && rm -rf /var/lib/apt/lists/*
 COPY ./php-ini-overrides.ini /etc/php/7.3/cli/conf.d/
@@ -42,6 +44,8 @@ RUN apt-get update && apt-get install -y \
     php7.4-zip \
     php7.4-gmp \
     php7.4-xdebug \
+    php7.4-gd \
+    php7.4-mysql \
     php7.4-mbstring \
     && rm -rf /var/lib/apt/lists/*
 COPY ./php-ini-overrides.ini /etc/php/7.4/cli/conf.d/
@@ -57,6 +61,8 @@ RUN apt-get update && apt-get install -y \
     php8.0-ldap \
     php8.0-zip \
     php8.0-gmp \
+    php8.0-gd \
+    php8.0-mysql \
     php8.0-mbstring \
     && rm -rf /var/lib/apt/lists/*
 COPY ./php-ini-overrides.ini /etc/php/8.0/cli/conf.d/
