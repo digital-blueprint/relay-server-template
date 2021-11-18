@@ -1,10 +1,6 @@
 dbp_relay_auth:
-  server_url: '%env(KEYCLOAK_SERVER_URL)%/realms/%env(KEYCLOAK_REALM)%'
-  # Remote validation
-  remote_validation: '%env(bool:KEYCLOAK_REMOTE_VALIDATION)%'
-  remote_validation_id: '%env(KEYCLOAK_CLIENT_ID)%'
-  remote_validation_secret: '%env(KEYCLOAK_CLIENT_SECRET)%'
-  # Frontend
-  frontend_keycloak_server: '%env(KEYCLOAK_SERVER_URL)%'
-  frontend_keycloak_realm: '%env(KEYCLOAK_REALM)%'
-  frontend_keycloak_client_id: '%env(KEYCLOAK_FRONTEND_CLIENT_ID)%'
+  server_url: '%env(AUTH_SERVER_URL)%'
+  # OpenAPI Docs Keycloak Settings
+  frontend_keycloak_server: '%env(AUTH_APIDOCS_KEYCLOAK_SERVER)%'
+  frontend_keycloak_realm: '%env(AUTH_APIDOCS_KEYCLOAK_REALM)%'
+  frontend_keycloak_client_id: '%env(AUTH_APIDOCS_KEYCLOAK_CLIENT_ID)%'
