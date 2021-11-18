@@ -32,10 +32,28 @@
         "version": "2.0.2"
     },
     "dbp/relay-auth-bundle": {
-        "version": "v0.1.6"
+        "version": "0.1",
+        "recipe": {
+            "repo": "github.com/digital-blueprint/symfony-recipes",
+            "branch": "main",
+            "version": "0.1",
+            "ref": "1195a75c2c8826343f3cc936a06a883f986a56ae"
+        },
+        "files": [
+            "config/packages/dbp_relay_auth.yaml"
+        ]
     },
     "dbp/relay-core-bundle": {
-        "version": "v0.1.22"
+        "version": "0.1",
+        "recipe": {
+            "repo": "github.com/digital-blueprint/symfony-recipes",
+            "branch": "main",
+            "version": "0.1",
+            "ref": "d03e655fa1f726593be781f194a5084f99c7c47d"
+        },
+        "files": [
+            "config/packages/dbp_relay_core.yaml"
+        ]
     },
     "dnoegel/php-xdg-base-dir": {
         "version": "v0.1.1"
