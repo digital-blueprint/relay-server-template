@@ -1,6 +1,7 @@
 dbp_relay_auth:
   server_url: '%env(AUTH_SERVER_URL)%'
-  # OpenAPI Docs Keycloak Settings
+  # (optional) This allows you to log into the auto generated OpenAPI documentation page
+  # which you can see when visiting the server with a browser. Remove to disable.
   frontend_keycloak_server: '%env(AUTH_APIDOCS_KEYCLOAK_SERVER)%'
   frontend_keycloak_realm: '%env(AUTH_APIDOCS_KEYCLOAK_REALM)%'
   frontend_keycloak_client_id: '%env(AUTH_APIDOCS_KEYCLOAK_CLIENT_ID)%'
