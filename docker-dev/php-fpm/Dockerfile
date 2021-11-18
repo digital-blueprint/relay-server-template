@@ -41,7 +41,7 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 STOPSIGNAL SIGQUIT
 
 ARG UID
-RUN useradd -u "$UID" -ms /bin/bash user
+RUN useradd -u "${UID:-1000}" -ms /bin/bash user
 RUN echo 'user ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # Install a newer composer
