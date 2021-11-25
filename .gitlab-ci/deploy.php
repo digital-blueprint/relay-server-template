@@ -87,9 +87,8 @@ task('build-custom', function () {
     runLocally("composer dump-env '$APP_ENV'");
     runLocally('rm -f .env.local');
 
-    // Cache warmup
+    // Cache clear/warmup
     runLocally('php bin/console cache:clear');
-    runLocally('php bin/console cache:warmup');
 });
 
 // Deploy task
