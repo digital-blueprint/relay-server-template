@@ -24,6 +24,7 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
         php7.3-soap \
         php7.3-json \
         php7.3-mbstring \
+        php7.3-mysql \
         php7.3-opcache \
         php7.3-readline \
         php7.3-xml \
