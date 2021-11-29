@@ -20,6 +20,7 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
         php-apcu-bc \
         php7.3-cli \
         php7.3-curl \
+        php7.3-gd \
         php7.3-soap \
         php7.3-json \
         php7.3-mbstring \
