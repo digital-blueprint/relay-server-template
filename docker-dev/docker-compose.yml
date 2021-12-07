@@ -35,6 +35,9 @@ services:
 
   redis:
     image: "redis"
+    entrypoint: redis-server --save 60 1 --loglevel warning
+    volumes:
+      - redis-data:/data
 
   redis-commander:
     image: "rediscommander/redis-commander"
@@ -42,3 +45,26 @@ services:
       - REDIS_HOST=redis
     ports:
       - "8101:8081"
+
+  mariadb:
+    image: mariadb:10.3
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=db
+      - MYSQL_USER=db
+      - MYSQL_PASSWORD=secret
+      - MYSQL_ROOT_PASSWORD=root-secret
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_USER=db
+      - PMA_PASSWORD=secret
+      - PMA_HOSTS=mariadb
+    ports:
+      - "8102:80"
+
+volumes:
+  mariadb-data:
+  redis-data:
