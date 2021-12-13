@@ -17,5 +17,8 @@
       ],
       "allowedVersions": "<6"
     }
-  ]
+  ],
+  "docker": {
+    "enabled": false
+  }
 }
