@@ -11,8 +11,6 @@ require 'recipe/cachetool.php';
 // Global config
 set('allow_anonymous_stats', false);
 
-set('cachetool_binary', 'cachetool-7.0.0.phar');
-
 $rsync_config = [
     'exclude' => [
         '.git',
