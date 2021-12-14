@@ -43,7 +43,8 @@ host('development')
     ->set('rsync', $rsync_config)
     ->set('rsync_src', __DIR__.'/../')
     ->set('rsync_dest', '{{release_path}}')
-    ->set('cachetool', '127.0.0.1:9001');
+    ->set('cachetool', '127.0.0.1:9001')
+    ->set('cachetool_binary', 'cachetool-7.0.0.phar');
 
 // Build task
 task('build-custom', function () {
