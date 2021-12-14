@@ -46,7 +46,8 @@
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
-            "vendor/dbp/relay-core-bundle/bin/move-core-bundle.php": "php-script"
+            "vendor/dbp/relay-core-bundle/bin/move-core-bundle.php": "php-script",
+            "vendor/dbp/relay-core-bundle/bin/disable-database-url.php": "php-script"
         },
         "post-install-cmd": [
             "@auto-scripts"
