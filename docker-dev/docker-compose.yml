@@ -52,7 +52,7 @@ services:
       - mariadb-data:/var/lib/mysql
     environment:
       - MYSQL_DATABASE=db
-      - MYSQL_USER=db
+      - MYSQL_USER=user
       - MYSQL_PASSWORD=secret
       - MYSQL_ROOT_PASSWORD=root-secret
 
