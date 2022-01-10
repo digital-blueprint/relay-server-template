@@ -55,17 +55,15 @@
             "@auto-scripts"
         ],
         "test": [
-            "@php bin/phpunit"
+            "@php vendor/bin/phpunit"
         ],
         "coverage": [
-            "@php bin/phpunit --coverage-html _coverage"
+            "@php vendor/bin/phpunit --coverage-html _coverage"
         ],
         "phpstan": [
-            "@php bin/phpunit --atleast-version 0",
             "@php vendor/bin/phpstan analyze --ansi"
         ],
         "psalm": [
-            "@php bin/phpunit --atleast-version 0",
             "@php vendor/bin/psalm"
         ],
         "lint": [
@@ -97,6 +95,7 @@
         "friendsofphp/php-cs-fixer": "^3.0",
         "phpstan/phpstan": "^1.0.2",
         "phpstan/phpstan-phpunit": "^1.0.0",
+        "phpunit/phpunit": "^9",
         "symfony/browser-kit": "^5.4",
         "symfony/debug-bundle": "^5.4",
         "symfony/http-client": "^5.4",
