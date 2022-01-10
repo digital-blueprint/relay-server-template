@@ -7,12 +7,12 @@
         "dbp/relay-auth-bundle": "^0.1.4",
         "dbp/relay-core-bundle": "^0.1.22",
         "symfony/apache-pack": "^1.0",
-        "symfony/console": "^5.2",
-        "symfony/dotenv": "^5.2",
+        "symfony/console": "^5.4",
+        "symfony/dotenv": "^5.4",
         "symfony/flex": "^1.11",
-        "symfony/framework-bundle": "^5.2",
+        "symfony/framework-bundle": "^5.4",
         "symfony/monolog-bundle": "^3.5",
-        "symfony/yaml": "^5.2"
+        "symfony/yaml": "^5.4"
     },
     "config": {
         "preferred-install": {
@@ -87,7 +87,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "^5.2",
+            "require": "^5.4",
             "endpoint": [
                 "flex://defaults",
                 "https://api.github.com/repos/digital-blueprint/symfony-recipes/contents/index.json?ref=flex/main"
@@ -98,13 +98,13 @@
         "friendsofphp/php-cs-fixer": "^3.0",
         "phpstan/phpstan": "^1.0.2",
         "phpstan/phpstan-phpunit": "^1.0.0",
-        "symfony/browser-kit": "^5.2",
-        "symfony/debug-bundle": "^5.2",
-        "symfony/http-client": "^5.2",
-        "symfony/phpunit-bridge": "^5.2",
-        "symfony/stopwatch": "^5.2",
-        "symfony/var-dumper": "^5.2",
-        "symfony/web-profiler-bundle": "^5.2",
+        "symfony/browser-kit": "^5.4",
+        "symfony/debug-bundle": "^5.4",
+        "symfony/http-client": "^5.4",
+        "symfony/phpunit-bridge": "^5.4",
+        "symfony/stopwatch": "^5.4",
+        "symfony/var-dumper": "^5.4",
+        "symfony/web-profiler-bundle": "^5.4",
         "vimeo/psalm": "^4.2.1"
     }
 }
