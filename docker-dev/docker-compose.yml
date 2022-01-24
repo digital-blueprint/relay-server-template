@@ -27,7 +27,7 @@ services:
     build:
       context: php-fpm
     working_dir: /application
-    entrypoint: sudo supervisord -c /etc/supervisor/conf.d/queue-worker.conf
+    entrypoint: supervisord -c /etc/supervisor/conf.d/queue-worker.conf
     volumes:
       - ./php-fpm/queue-worker.conf:/etc/supervisor/conf.d/queue-worker.conf
       - ..:/application
