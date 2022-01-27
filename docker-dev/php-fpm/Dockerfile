@@ -6,6 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get -y --no-install-recommends install \
         ca-certificates \
+        libldap-common \
         curl \
         unzip \
         sudo \
