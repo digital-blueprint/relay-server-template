@@ -1,5 +1,6 @@
 {
     "name": "dbp/relay-server-template",
+    "description": "An example Symfony application using the Relay API gateway",
     "type": "project",
     "license": "AGPL-3.0-or-later",
     "require": {
