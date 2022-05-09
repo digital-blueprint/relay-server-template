@@ -229,11 +229,11 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.7",
+            "version": "v0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git",
-                "reference": "a6171465a634332f5f44c9188353a69961978d20"
+                "reference": "e517fb2a9b7a5fab9049dfaac2c228ac79244b3c"
             },
             "require": {
                 "dbp/relay-core-bundle": "^0.1.10",
@@ -246,7 +246,7 @@
                 "symfony/framework-bundle": "^5.2",
                 "symfony/security-core": "^5.2",
                 "symfony/yaml": "^5.2",
-                "web-token/jwt-easy": "^2.1",
+                "web-token/jwt-checker": "^2.0",
                 "web-token/jwt-signature-algorithm-rsa": "^2.1"
             },
             "require-dev": {
@@ -277,7 +277,8 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2022-02-08T10:15:00+00:00"
+            "description": "Authentification bundle for the Relay API gateway",
+            "time": "2022-05-09T09:35:58+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
@@ -6931,171 +6932,6 @@
             ],
             "support": {
                 "source": "https://github.com/web-token/jwt-core/tree/v2.2.11"
-            },
-            "funding": [
-                {
-                    "url": "https://www.patreon.com/FlorentMorselli",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2021-03-17T14:55:52+00:00"
-        },
-        {
-            "name": "web-token/jwt-easy",
-            "version": "v2.2.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/web-token/jwt-easy.git",
-                "reference": "01db23252bb53d4fd36975b55dd58466bab1bb30"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-easy/zipball/01db23252bb53d4fd36975b55dd58466bab1bb30",
-                "reference": "01db23252bb53d4fd36975b55dd58466bab1bb30",
-                "shasum": ""
-            },
-            "require": {
-                "web-token/jwt-checker": "^2.1",
-                "web-token/jwt-encryption": "^2.1",
-                "web-token/jwt-signature": "^2.1"
-            },
-            "suggest": {
-                "web-token/jwt-encryption-algorithm-aescbc": "Adds AES-CBC based encryption algorithms",
-                "web-token/jwt-encryption-algorithm-aesgcm": "Adds AES-GCM based encryption algorithms",
-                "web-token/jwt-encryption-algorithm-aesgcmkw": "Adds AES-GCM Key Wrapping based encryption algorithms",
-                "web-token/jwt-encryption-algorithm-aeskw": "Adds AES Key Wrapping based encryption algorithms",
-                "web-token/jwt-encryption-algorithm-dir": "Adds Direct encryption algorithm",
-                "web-token/jwt-encryption-algorithm-ecdh-es": "Adds ECDH-ES based encryption algorithms",
-                "web-token/jwt-encryption-algorithm-pbes2": "Adds PBES2 based encryption algorithms",
-                "web-token/jwt-encryption-algorithm-rsa": "Adds RSA based encryption algorithms",
-                "web-token/jwt-signature-algorithm-ecdsa": "Adds ECDSA based signature algorithms",
-                "web-token/jwt-signature-algorithm-eddsa": "Adds EdDSA based signature algorithms",
-                "web-token/jwt-signature-algorithm-hmac": "Adds HMAC based signature algorithms",
-                "web-token/jwt-signature-algorithm-none": "Adds none signature algorithms",
-                "web-token/jwt-signature-algorithm-rsa": "Adds RSA based signature algorithms"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Jose\\Easy\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Florent Morselli",
-                    "homepage": "https://github.com/Spomky"
-                },
-                {
-                    "name": "All contributors",
-                    "homepage": "https://github.com/web-token/jwt-framework/contributors"
-                }
-            ],
-            "description": "Easy toolset to use the JWT Framework.",
-            "homepage": "https://github.com/web-token",
-            "keywords": [
-                "JOSE",
-                "JWE",
-                "JWK",
-                "JWKSet",
-                "JWS",
-                "Jot",
-                "RFC7515",
-                "RFC7516",
-                "RFC7517",
-                "RFC7518",
-                "RFC7519",
-                "RFC7520",
-                "bundle",
-                "jwa",
-                "jwt",
-                "symfony"
-            ],
-            "support": {
-                "source": "https://github.com/web-token/jwt-easy/tree/v2.2.11"
-            },
-            "funding": [
-                {
-                    "url": "https://www.patreon.com/FlorentMorselli",
-                    "type": "patreon"
-                }
-            ],
-            "abandoned": true,
-            "time": "2021-03-17T14:55:52+00:00"
-        },
-        {
-            "name": "web-token/jwt-encryption",
-            "version": "v2.2.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/web-token/jwt-encryption.git",
-                "reference": "3b8d67d7c5c013750703e7c27f1001544407bbb2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-encryption/zipball/3b8d67d7c5c013750703e7c27f1001544407bbb2",
-                "reference": "3b8d67d7c5c013750703e7c27f1001544407bbb2",
-                "shasum": ""
-            },
-            "require": {
-                "web-token/jwt-core": "^2.1"
-            },
-            "suggest": {
-                "web-token/jwt-encryption-algorithm-aescbc": "AES CBC Based Content Encryption Algorithms",
-                "web-token/jwt-encryption-algorithm-aesgcm": "AES GCM Based Content Encryption Algorithms",
-                "web-token/jwt-encryption-algorithm-aesgcmkw": "AES GCM Key Wrapping Based Key Encryption Algorithms",
-                "web-token/jwt-encryption-algorithm-aeskw": "AES Key Wrapping Based Key Encryption Algorithms",
-                "web-token/jwt-encryption-algorithm-dir": "Direct Key Encryption Algorithms",
-                "web-token/jwt-encryption-algorithm-ecdh-es": "ECDH-ES Based Key Encryption Algorithms",
-                "web-token/jwt-encryption-algorithm-experimental": "Experimental Key and Signature Algorithms",
-                "web-token/jwt-encryption-algorithm-pbes2": "PBES2 Based Key Encryption Algorithms",
-                "web-token/jwt-encryption-algorithm-rsa": "RSA Based Key Encryption Algorithms"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Jose\\Component\\Encryption\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Florent Morselli",
-                    "homepage": "https://github.com/Spomky"
-                },
-                {
-                    "name": "All contributors",
-                    "homepage": "https://github.com/web-token/jwt-encryption/contributors"
-                }
-            ],
-            "description": "Encryption component of the JWT Framework.",
-            "homepage": "https://github.com/web-token",
-            "keywords": [
-                "JOSE",
-                "JWE",
-                "JWK",
-                "JWKSet",
-                "JWS",
-                "Jot",
-                "RFC7515",
-                "RFC7516",
-                "RFC7517",
-                "RFC7518",
-                "RFC7519",
-                "RFC7520",
-                "bundle",
-                "jwa",
-                "jwt",
-                "symfony"
-            ],
-            "support": {
-                "source": "https://github.com/web-token/jwt-encryption/tree/v2.2.11"
             },
             "funding": [
                 {
