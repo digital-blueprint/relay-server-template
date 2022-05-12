@@ -6,7 +6,7 @@
     "require": {
         "php": ">=7.3",
         "dbp/relay-auth-bundle": "^0.1.4",
-        "dbp/relay-core-bundle": "^0.1.22",
+        "dbp/relay-core-bundle": "^0.1.36",
         "symfony/apache-pack": "^1.0",
         "symfony/console": "^5.4",
         "symfony/dotenv": "^5.4",
