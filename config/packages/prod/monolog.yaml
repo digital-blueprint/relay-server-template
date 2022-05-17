@@ -1,7 +1,0 @@
-monolog:
-    handlers:
-        file-log:
-            type: rotating_file
-            level: info
-            path: '%kernel.logs_dir%/%kernel.environment%.log'
-            max_files: 10
