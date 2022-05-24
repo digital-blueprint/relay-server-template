@@ -11,6 +11,7 @@ RUN apt-get update \
         unzip \
         sudo \
         git \
+        npm \
         php-apcu \
         php-apcu-bc \
         php7.4-cli \
