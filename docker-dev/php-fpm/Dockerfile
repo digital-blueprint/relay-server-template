@@ -12,6 +12,7 @@ RUN apt-get update \
         sudo \
         git \
         npm \
+        openssh-client \
         php-apcu \
         php-apcu-bc \
         php7.4-cli \
