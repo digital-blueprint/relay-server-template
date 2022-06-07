@@ -44,7 +44,8 @@ RUN echo 'user ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # Install a newer composer
 RUN mkdir -p /home/user/.local/bin
-RUN curl -L https://github.com/composer/getcomposer.org/raw/main/web/download/2.2.5/composer.phar -o /home/user/.local/bin/composer
+RUN curl -L https://github.com/composer/getcomposer.org/raw/main/web/download/2.3.7/composer.phar -o /home/user/.local/bin/composer
+RUN chmod a+x /home/user/.local/bin/composer
 ENV PATH "/home/user/.local/bin:${PATH}"
 
 USER user
