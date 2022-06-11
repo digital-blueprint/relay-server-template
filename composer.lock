@@ -3284,16 +3284,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.19.0",
+            "version": "v1.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "c36d11d1bca0a85dde6ca4d52bd4aceeb54dbd8f"
+                "reference": "9c612796a68de4196fff4bc159db5071aa62d428"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/c36d11d1bca0a85dde6ca4d52bd4aceeb54dbd8f",
-                "reference": "c36d11d1bca0a85dde6ca4d52bd4aceeb54dbd8f",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/9c612796a68de4196fff4bc159db5071aa62d428",
+                "reference": "9c612796a68de4196fff4bc159db5071aa62d428",
                 "shasum": ""
             },
             "require": {
@@ -3329,7 +3329,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v1.19.0"
+                "source": "https://github.com/symfony/flex/tree/v1.19.1"
             },
             "funding": [
                 {
@@ -3345,7 +3345,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-03T07:58:31+00:00"
+            "time": "2022-06-06T15:14:39+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -8417,16 +8417,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.7.10",
+            "version": "1.7.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "25e069474cf00215b0f64c60a26230908ef3eefa"
+                "reference": "32f10779d9cd88a9cbd972ec611a4148a3cbbc7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/25e069474cf00215b0f64c60a26230908ef3eefa",
-                "reference": "25e069474cf00215b0f64c60a26230908ef3eefa",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/32f10779d9cd88a9cbd972ec611a4148a3cbbc7e",
+                "reference": "32f10779d9cd88a9cbd972ec611a4148a3cbbc7e",
                 "shasum": ""
             },
             "require": {
@@ -8452,7 +8452,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.7.10"
+                "source": "https://github.com/phpstan/phpstan/tree/1.7.12"
             },
             "funding": [
                 {
@@ -8472,7 +8472,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-03T14:12:23+00:00"
+            "time": "2022-06-09T12:39:36+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
