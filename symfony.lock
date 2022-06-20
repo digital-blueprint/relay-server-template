@@ -58,6 +58,15 @@
             "config/packages/dbp_relay_core.yaml"
         ]
     },
+    "dbp/relay-maker-bundle": {
+        "version": "0.1",
+        "recipe": {
+            "repo": "github.com/digital-blueprint/symfony-recipes",
+            "branch": "main",
+            "version": "0.1",
+            "ref": "087f81f9b8ee1c7956ecf00f7ea2f8276adae844"
+        }
+    },
     "dnoegel/php-xdg-base-dir": {
         "version": "v0.1.1"
     },
