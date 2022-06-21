@@ -11,7 +11,6 @@ RUN apt-get update \
         unzip \
         sudo \
         git \
-        npm \
         openssh-client \
         php-apcu \
         php-apcu-bc \
