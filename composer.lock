@@ -350,11 +350,11 @@
         },
         {
             "name": "dbp/relay-maker-bundle",
-            "version": "v0.1.2",
+            "version": "v0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-maker-bundle",
-                "reference": "343876cd9a3c4ebfcb1bdd35a1a91b1630177da7"
+                "reference": "741121c4b346342dcb17dd3f34543f0aafde1306"
             },
             "require": {
                 "php": ">=7.3",
@@ -384,7 +384,7 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "A maker bundle for the Relay API gateway",
-            "time": "2022-06-20T11:55:49+00:00"
+            "time": "2022-06-21T10:16:41+00:00"
         },
         {
             "name": "doctrine/annotations",
