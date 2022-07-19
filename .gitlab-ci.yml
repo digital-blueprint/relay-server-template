@@ -1,9 +1,5 @@
 image: registry.gitlab.tugraz.at/dbp/relay/dbp-relay-server-template/main:v2
 
-before_script:
-  - 'git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.tugraz.at/".insteadOf "git@gitlab.tugraz.at:"'
-  - 'git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.tugraz.at/".insteadOf "https://gitlab.tugraz.at/"'
-
 variables:
   COMPOSER_CACHE_DIR: "$CI_PROJECT_DIR/_composer_cache"
 
