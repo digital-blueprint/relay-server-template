@@ -12,11 +12,6 @@ cache:
   paths:
     - _composer_cache
 
-stages:
-  - test
-  - deploy
-  - e2e
-
 .test_defaults: &test_defaults
   script:
     - sudo update-alternatives --set php "/usr/bin/${PHP}"
@@ -25,25 +20,21 @@ stages:
     - composer test
 
 test-php7.3:
-  stage: test
   variables:
     PHP: "php7.3"
   <<: *test_defaults
 
 test-php7.4:
-  stage: test
   variables:
     PHP: "php7.4"
   <<: *test_defaults
 
 test-php8.0:
-  stage: test
   variables:
     PHP: "php8.0"
   <<: *test_defaults
 
 linting:
-  stage: test
   allow_failure: true
   script:
     - sudo update-alternatives --set php /usr/bin/php7.4
@@ -54,43 +45,19 @@ linting:
     - composer run psalm || result=1
     - exit $result
 
-.deploy_defaults: &deploy_defaults
+deploy:
   needs: ["test-php7.3", "test-php7.4"]
   except:
     - schedules
-  stage: deploy
-  script:
-    - sudo update-alternatives --set php /usr/bin/php7.3
-    # Add ssh key
-    - mkdir -p ~/.ssh
-    - echo "${DEPLOY_KEY}" | tr -d '\r' > ~/.ssh/id_rsa
-    - chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_rsa
-    - ssh-keyscan -t rsa "${DEPLOY_HOST}" >> ~/.ssh/known_hosts
-    # Deploy
-    - dep deploy --file ./.gitlab-ci/deploy.php "${CI_ENVIRONMENT_NAME}"
-    - echo "Deployed to ${CI_ENVIRONMENT_URL}"
-    # Simple health check
-    - curl --max-time 10 --retry 3 --output /dev/null --silent --show-error --fail --location "${CI_ENVIRONMENT_URL}"
-
-deploy_development:
   only:
     refs:
       - main
-  environment:
-    name: development
-    url: https://api-template-dev.tugraz.at/
+  inherit:
+    variables: false
   variables:
-    DEPLOY_HOST: mw01-dev.tugraz.at
-    DEPLOY_KEY: "$DEPLOY_SSH_KEY"
-  <<: *deploy_defaults
-
-e2e_tests:
-  only:
-    refs:
-      - main
-  variables:
-    E2E_PROJECT: rest
-  stage: e2e
+    UPSTREAM_PROJECT_PATH: ${CI_PROJECT_PATH}
+    UPSTREAM_COMMIT_BRANCH: ${CI_COMMIT_BRANCH}
+    UPSTREAM_COMMIT_SHA: ${CI_COMMIT_SHA}
   trigger:
-    project: dbp/e2e-tests
+    project: dbp/deployer
     strategy: depend
