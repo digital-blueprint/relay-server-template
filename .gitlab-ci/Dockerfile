@@ -7,15 +7,13 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y \
     composer \
     php-zip \
-    rsync \
     sudo \
-    wget \
     curl \
     lsb-release \
     && rm -rf /var/lib/apt/lists/*
 
 # PHP Repo
-RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+RUN curl https://packages.sury.org/php/apt.gpg -o /etc/apt/trusted.gpg.d/php.gpg
 RUN echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
 
 # PHP 7.3
@@ -75,20 +73,5 @@ RUN sudo update-alternatives --set phar.phar /usr/bin/phar.phar7.3
 RUN useradd -u 1000 -ms /bin/bash user
 RUN echo 'user ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER user
-
-# Install deployer globally and add it to PATH
-ENV COMPOSER_HOME="/home/user/.composer"
-RUN mkdir -p "${COMPOSER_HOME}"
-ADD composer.lock "${COMPOSER_HOME}"
-ADD composer.json "${COMPOSER_HOME}"
-RUN composer global install
-ENV PATH "${COMPOSER_HOME}/vendor/bin:${PATH}"
-
-# Install a newer composer
-RUN mkdir -p /home/user/.local/bin
-WORKDIR /home/user/.local/bin
-RUN wget https://raw.githubusercontent.com/composer/getcomposer.org/bfd95e2a4383ee9cf7c058c2df29d7acb5f86d77/web/installer  -O - -q | php --
-RUN mv composer.phar composer
-ENV PATH "/home/user/.local/bin:$PATH"
 
 WORKDIR /home/user
