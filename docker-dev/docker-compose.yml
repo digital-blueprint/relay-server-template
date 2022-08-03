@@ -15,6 +15,9 @@ services:
       - TERM_PROGRAM=Hyper  # force colors for the symfony dumper
     build:
       context: php-fpm
+    depends_on:
+      - mariadb
+      - redis
     working_dir: /application
     volumes:
       - ..:/application
@@ -26,6 +29,9 @@ services:
       - TERM_PROGRAM=Hyper  # force colors for the symfony dumper
     build:
       context: php-fpm
+    depends_on:
+      - mariadb
+      - redis
     working_dir: /application
     entrypoint: supervisord -c /etc/supervisor/conf.d/queue-worker.conf
     volumes:
@@ -41,6 +47,8 @@ services:
 
   redis-commander:
     image: "rediscommander/redis-commander"
+    depends_on:
+      - redis
     environment:
       - REDIS_HOST=redis
     ports:
@@ -58,6 +66,8 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
+    depends_on:
+      - mariadb
     environment:
       - PMA_USER=db
       - PMA_PASSWORD=secret
