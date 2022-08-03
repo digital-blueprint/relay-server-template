@@ -39,6 +39,18 @@ services:
       - ..:/application
       - ./php-fpm/php-ini-overrides.ini:/etc/php/7.4/cli/conf.d/99-overrides.ini
 
+  cron:
+    build:
+      context: php-fpm
+    depends_on:
+      - mariadb
+      - redis
+    working_dir: /application
+    entrypoint: /cron.sh
+    volumes:
+      - ..:/application
+      - ./php-fpm/php-ini-overrides.ini:/etc/php/7.4/cli/conf.d/99-overrides.ini
+
   redis:
     image: "redis"
     entrypoint: redis-server --save 60 1 --loglevel warning

@@ -6,7 +6,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get -y --no-install-recommends install \
         ca-certificates \
+        tini \
         libldap-common \
+        busybox-static \
         curl \
         unzip \
         sudo \
@@ -35,6 +37,11 @@ RUN apt-get update \
         supervisor \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Cron setup, run every 5 minutes
+RUN mkdir -p /var/spool/cron/crontabs; \
+    echo '*/5 * * * * php -f /application/bin/console dbp:relay:core:cron' > /var/spool/cron/crontabs/user
+COPY cron.sh /
 
 STOPSIGNAL SIGQUIT
 
