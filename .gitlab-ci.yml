@@ -30,6 +30,11 @@ test-php8.0:
     PHP: "php8.0"
   <<: *test_defaults
 
+test-php8.1:
+  variables:
+    PHP: "php8.1"
+  <<: *test_defaults
+
 linting:
   allow_failure: true
   script:
