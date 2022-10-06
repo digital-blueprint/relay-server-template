@@ -30,5 +30,4 @@ the symfony app.
 ## Links
 
 * Open <http://127.0.0.1:8000/> for the API Platform webpage
-* Open <http://localhost:8101/> for redis commander
 * Open <http://localhost:8102/> for phpmyadmin
