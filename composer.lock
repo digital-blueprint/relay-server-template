@@ -229,14 +229,14 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.9",
+            "version": "v0.1.10",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git",
-                "reference": "c8e77bd99e6dfa40ace16409da64ce1d7f67e775"
+                "reference": "8874f5b9e08795e90e8557ceb6afa546d58c9d37"
             },
             "require": {
-                "dbp/relay-core-bundle": "^0.1.10",
+                "dbp/relay-core-bundle": "^0.1.43",
                 "ext-curl": "*",
                 "ext-gmp": "*",
                 "ext-json": "*",
@@ -254,6 +254,7 @@
                 "friendsofphp/php-cs-fixer": "^3.0",
                 "phpstan/phpstan": "^1.0.0",
                 "phpstan/phpstan-phpunit": "^1.0.0",
+                "phpstan/phpstan-symfony": "^1.2",
                 "phpunit/phpunit": "^9",
                 "symfony/browser-kit": "^5.3",
                 "symfony/http-client": "^5.3",
@@ -278,15 +279,15 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "Authentification bundle for the Relay API gateway",
-            "time": "2022-05-11T11:03:46+00:00"
+            "time": "2022-10-31T15:18:21+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.48",
+            "version": "v0.1.49",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle",
-                "reference": "022cfbb04346c7dbc0b988c61246d9f3ffa53b33"
+                "reference": "227239bebba7645338e4c445ae399ada21b92ee4"
             },
             "require": {
                 "api-platform/core": "^2.6.8 <2.7.0",
@@ -349,7 +350,7 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "The core bundle of the Relay API gateway",
-            "time": "2022-10-27T08:18:30+00:00"
+            "time": "2022-11-02T09:57:39+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
@@ -8576,16 +8577,16 @@
         },
         {
             "name": "phpstan/phpstan-symfony",
-            "version": "1.2.14",
+            "version": "1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-symfony.git",
-                "reference": "f7dd737329504115adaa987697a759a66dd2ee8a"
+                "reference": "7210072b7fd83bf62eb5f889d4da70b80c07f04c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/f7dd737329504115adaa987697a759a66dd2ee8a",
-                "reference": "f7dd737329504115adaa987697a759a66dd2ee8a",
+                "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/7210072b7fd83bf62eb5f889d4da70b80c07f04c",
+                "reference": "7210072b7fd83bf62eb5f889d4da70b80c07f04c",
                 "shasum": ""
             },
             "require": {
@@ -8641,9 +8642,9 @@
             "description": "Symfony Framework extensions and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-symfony/issues",
-                "source": "https://github.com/phpstan/phpstan-symfony/tree/1.2.14"
+                "source": "https://github.com/phpstan/phpstan-symfony/tree/1.2.15"
             },
-            "time": "2022-10-05T11:19:29+00:00"
+            "time": "2022-11-03T15:03:30+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
