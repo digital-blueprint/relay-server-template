@@ -283,17 +283,18 @@
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.49",
+            "version": "v0.1.55",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle",
-                "reference": "227239bebba7645338e4c445ae399ada21b92ee4"
+                "reference": "b1d1eaa5e9efc58a09e6176215c243041df168f3"
             },
             "require": {
                 "api-platform/core": "^2.6.8 <2.7.0",
                 "doctrine/annotations": "^1.13",
                 "dragonmantank/cron-expression": "^3.3",
                 "ext-fileinfo": "*",
+                "ext-intl": "*",
                 "ext-json": "*",
                 "guzzlehttp/guzzle": "^7.5",
                 "kevinrob/guzzle-cache-middleware": "^4.0",
@@ -350,7 +351,7 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "The core bundle of the Relay API gateway",
-            "time": "2022-11-02T09:57:39+00:00"
+            "time": "2022-11-10T10:15:38+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
@@ -10937,5 +10938,5 @@
     "platform-overrides": {
         "php": "7.3"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
