@@ -5,6 +5,7 @@
     "license": "AGPL-3.0-or-later",
     "require": {
         "php": ">=7.3",
+        "ext-intl": "*",
         "dbp/relay-auth-bundle": "^0.1.9",
         "dbp/relay-core-bundle": "^0.1.38",
         "dbp/relay-maker-bundle": "^0.1.4",
