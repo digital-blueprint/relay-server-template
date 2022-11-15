@@ -229,11 +229,11 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.11",
+            "version": "v0.1.12",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git",
-                "reference": "4573263f7e8f64d97b57d8c0ca0045f1882df755"
+                "reference": "d06af6d8be43f62606bc732893d72e6867adaffa"
             },
             "require": {
                 "dbp/relay-core-bundle": "^0.1.51",
@@ -279,15 +279,15 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "Authentification bundle for the Relay API gateway",
-            "time": "2022-11-08T14:40:08+00:00"
+            "time": "2022-11-15T12:46:31+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.55",
+            "version": "v0.1.59",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle",
-                "reference": "b1d1eaa5e9efc58a09e6176215c243041df168f3"
+                "reference": "05266632fdb82ec59ec9a5c9126d602eb7e94361"
             },
             "require": {
                 "api-platform/core": "^2.6.8 <2.7.0",
@@ -351,7 +351,7 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "The core bundle of the Relay API gateway",
-            "time": "2022-11-10T10:15:38+00:00"
+            "time": "2022-11-15T12:51:49+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
@@ -1161,16 +1161,16 @@
         },
         {
             "name": "kevinrob/guzzle-cache-middleware",
-            "version": "v4.0.1",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kevinrob/guzzle-cache-middleware.git",
-                "reference": "0a61532ee8bf278a0d875a86a536aeeab592da5a"
+                "reference": "24b93edc942f2eaaeb17f7ae0d6db0f77f4ed4ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kevinrob/guzzle-cache-middleware/zipball/0a61532ee8bf278a0d875a86a536aeeab592da5a",
-                "reference": "0a61532ee8bf278a0d875a86a536aeeab592da5a",
+                "url": "https://api.github.com/repos/Kevinrob/guzzle-cache-middleware/zipball/24b93edc942f2eaaeb17f7ae0d6db0f77f4ed4ea",
+                "reference": "24b93edc942f2eaaeb17f7ae0d6db0f77f4ed4ea",
                 "shasum": ""
             },
             "require": {
@@ -1239,9 +1239,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Kevinrob/guzzle-cache-middleware/issues",
-                "source": "https://github.com/Kevinrob/guzzle-cache-middleware/tree/v4.0.1"
+                "source": "https://github.com/Kevinrob/guzzle-cache-middleware/tree/v4.0.2"
             },
-            "time": "2022-03-15T21:47:10+00:00"
+            "time": "2022-10-02T13:13:18+00:00"
         },
         {
             "name": "monolog/monolog",
