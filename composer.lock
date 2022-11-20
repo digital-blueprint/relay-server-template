@@ -229,11 +229,11 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.12",
+            "version": "v0.1.13",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git",
-                "reference": "d06af6d8be43f62606bc732893d72e6867adaffa"
+                "reference": "48af0bd8366c03a6256fa9188223eb6799b1482d"
             },
             "require": {
                 "dbp/relay-core-bundle": "^0.1.51",
@@ -279,7 +279,7 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "Authentification bundle for the Relay API gateway",
-            "time": "2022-11-15T12:46:31+00:00"
+            "time": "2022-11-16T12:43:55+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
@@ -10939,5 +10939,5 @@
     "platform-overrides": {
         "php": "7.3"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
