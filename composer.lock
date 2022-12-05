@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0b666ffbada6026028513d118e7c521",
+    "content-hash": "50592f4d283f6741d7fb8174c304f69d",
     "packages": [
         {
             "name": "api-platform/core",
@@ -229,14 +229,14 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.13",
+            "version": "v0.1.14",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git",
-                "reference": "48af0bd8366c03a6256fa9188223eb6799b1482d"
+                "reference": "e4def4c56b8a93c58371e5be4d6102945888ad18"
             },
             "require": {
-                "dbp/relay-core-bundle": "^0.1.51",
+                "dbp/relay-core-bundle": "^0.1.62",
                 "ext-curl": "*",
                 "ext-gmp": "*",
                 "ext-json": "*",
@@ -279,15 +279,15 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "Authentification bundle for the Relay API gateway",
-            "time": "2022-11-16T12:43:55+00:00"
+            "time": "2022-12-05T00:51:56+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.61",
+            "version": "v0.1.64",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle",
-                "reference": "996fc7d43361720e3749401fd0f005ed3d97404b"
+                "reference": "f1469c6034fcf8d32901f72b4cbec20e59c25d0b"
             },
             "require": {
                 "api-platform/core": "^2.6.8 <2.7.0",
@@ -351,7 +351,7 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "The core bundle of the Relay API gateway",
-            "time": "2022-11-23T12:35:13+00:00"
+            "time": "2022-12-01T12:48:26+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
@@ -10939,5 +10939,5 @@
     "platform-overrides": {
         "php": "7.3"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }

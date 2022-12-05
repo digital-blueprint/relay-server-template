@@ -6,8 +6,8 @@
     "require": {
         "php": ">=7.3",
         "ext-intl": "*",
-        "dbp/relay-auth-bundle": "^0.1.9",
-        "dbp/relay-core-bundle": "^0.1.38",
+        "dbp/relay-auth-bundle": "^0.1.14",
+        "dbp/relay-core-bundle": "^0.1.64",
         "dbp/relay-maker-bundle": "^0.1.4",
         "symfony/apache-pack": "^1.0.1",
         "symfony/console": "^5.4.11",
