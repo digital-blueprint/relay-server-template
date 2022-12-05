@@ -2765,16 +2765,16 @@
         },
         {
             "name": "symfony/doctrine-messenger",
-            "version": "v5.4.12",
+            "version": "v5.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/doctrine-messenger.git",
-                "reference": "7649a80e917b47c5072480a2d763c2422da239d2"
+                "reference": "e44bc95cf7f9ad34b7a993b9aaa93703e0bc35eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/doctrine-messenger/zipball/7649a80e917b47c5072480a2d763c2422da239d2",
-                "reference": "7649a80e917b47c5072480a2d763c2422da239d2",
+                "url": "https://api.github.com/repos/symfony/doctrine-messenger/zipball/e44bc95cf7f9ad34b7a993b9aaa93703e0bc35eb",
+                "reference": "e44bc95cf7f9ad34b7a993b9aaa93703e0bc35eb",
                 "shasum": ""
             },
             "require": {
@@ -2818,7 +2818,7 @@
             "description": "Symfony Doctrine Messenger Bridge",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/doctrine-messenger/tree/v5.4.12"
+                "source": "https://github.com/symfony/doctrine-messenger/tree/v5.4.16"
             },
             "funding": [
                 {
@@ -2834,7 +2834,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-09T12:54:00+00:00"
+            "time": "2022-11-04T07:27:04+00:00"
         },
         {
             "name": "symfony/dotenv",
@@ -3817,16 +3817,16 @@
         },
         {
             "name": "symfony/messenger",
-            "version": "v5.4.14",
+            "version": "v5.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/messenger.git",
-                "reference": "de4b258a5551934460c422620b61cf0a35744f51"
+                "reference": "ead27c3bcb125799a249b430ca0540ee0b3a4504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/messenger/zipball/de4b258a5551934460c422620b61cf0a35744f51",
-                "reference": "de4b258a5551934460c422620b61cf0a35744f51",
+                "url": "https://api.github.com/repos/symfony/messenger/zipball/ead27c3bcb125799a249b430ca0540ee0b3a4504",
+                "reference": "ead27c3bcb125799a249b430ca0540ee0b3a4504",
                 "shasum": ""
             },
             "require": {
@@ -3887,7 +3887,7 @@
             "description": "Helps applications send and receive messages to/from other applications or via message queues",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/messenger/tree/v5.4.14"
+                "source": "https://github.com/symfony/messenger/tree/v5.4.16"
             },
             "funding": [
                 {
@@ -3903,7 +3903,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-10T09:32:54+00:00"
+            "time": "2022-11-14T10:09:38+00:00"
         },
         {
             "name": "symfony/mime",
@@ -5106,16 +5106,16 @@
         },
         {
             "name": "symfony/property-info",
-            "version": "v5.4.15",
+            "version": "v5.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "3ef5e026a71a39345da241292c153979893033c2"
+                "reference": "9dd148c4fbfc231fa4bff00def8dc16a2cd89944"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/3ef5e026a71a39345da241292c153979893033c2",
-                "reference": "3ef5e026a71a39345da241292c153979893033c2",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/9dd148c4fbfc231fa4bff00def8dc16a2cd89944",
+                "reference": "9dd148c4fbfc231fa4bff00def8dc16a2cd89944",
                 "shasum": ""
             },
             "require": {
@@ -5177,7 +5177,7 @@
                 "validator"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-info/tree/v5.4.15"
+                "source": "https://github.com/symfony/property-info/tree/v5.4.16"
             },
             "funding": [
                 {
@@ -5193,7 +5193,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-27T07:55:40+00:00"
+            "time": "2022-11-19T17:41:50+00:00"
         },
         {
             "name": "symfony/redis-messenger",
@@ -6123,16 +6123,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v5.4.14",
+            "version": "v5.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "60db1cc3f5b098eb194c00a10489148a03861371"
+                "reference": "227d5030714c024bf4bc760b5762224070d4288c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/60db1cc3f5b098eb194c00a10489148a03861371",
-                "reference": "60db1cc3f5b098eb194c00a10489148a03861371",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/227d5030714c024bf4bc760b5762224070d4288c",
+                "reference": "227d5030714c024bf4bc760b5762224070d4288c",
                 "shasum": ""
             },
             "require": {
@@ -6224,7 +6224,7 @@
             "description": "Provides integration for Twig with various Symfony components",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/twig-bridge/tree/v5.4.14"
+                "source": "https://github.com/symfony/twig-bridge/tree/v5.4.16"
             },
             "funding": [
                 {
@@ -6240,7 +6240,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-11T12:49:22+00:00"
+            "time": "2022-11-04T07:37:26+00:00"
         },
         {
             "name": "symfony/twig-bundle",
