@@ -229,11 +229,11 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.14",
+            "version": "v0.1.15",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git",
-                "reference": "e4def4c56b8a93c58371e5be4d6102945888ad18"
+                "reference": "c54f8a957ff1be7a928e3da9a17f15d761faefcd"
             },
             "require": {
                 "dbp/relay-core-bundle": "^0.1.62",
@@ -279,15 +279,15 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "Authentification bundle for the Relay API gateway",
-            "time": "2022-12-05T00:51:56+00:00"
+            "time": "2023-02-23T16:11:17+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.76",
+            "version": "v0.1.82",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle",
-                "reference": "6b86617395c0d39c20d5f6327787b8713b4dc406"
+                "reference": "26b368389e5996a52a4afe7f718365e33bd16f91"
             },
             "require": {
                 "api-platform/core": "^2.6.8 <2.7.0",
@@ -309,6 +309,7 @@
                 "symfony/lock": "^5.4",
                 "symfony/messenger": "^5.4",
                 "symfony/mime": "^5.4",
+                "symfony/monolog-bundle": "^3.8",
                 "symfony/process": "^5.4",
                 "symfony/security-bundle": "^5.4",
                 "symfony/security-core": "^5.4",
@@ -351,7 +352,7 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "The core bundle of the Relay API gateway",
-            "time": "2023-02-14T14:23:10+00:00"
+            "time": "2023-02-23T14:57:20+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
