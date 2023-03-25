@@ -293,16 +293,16 @@
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.90",
+            "version": "v0.1.91",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-bundle.git",
-                "reference": "da90f97ea72c6e0361fa18de31dc0e0c141b1376"
+                "reference": "9a93c21af9466b47f9763420d668f49c5bf08ac8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/da90f97ea72c6e0361fa18de31dc0e0c141b1376",
-                "reference": "da90f97ea72c6e0361fa18de31dc0e0c141b1376",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/9a93c21af9466b47f9763420d668f49c5bf08ac8",
+                "reference": "9a93c21af9466b47f9763420d668f49c5bf08ac8",
                 "shasum": ""
             },
             "require": {
@@ -370,9 +370,9 @@
             "description": "The core bundle of the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.90"
+                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.91"
             },
-            "time": "2023-03-06T13:46:06+00:00"
+            "time": "2023-03-23T08:54:16+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
