@@ -2,6 +2,8 @@
 
 [GitHub](https://github.com/digital-blueprint/relay-server-template) | [Packagist](https://packagist.org/packages/dbp/relay-server-template)
 
+[![Test](https://github.com/digital-blueprint/relay-server-template/actions/workflows/test.yml/badge.svg)](https://github.com/digital-blueprint/relay-server-template/actions/workflows/test.yml)
+
 This repository can be used as a template/starting point for your own API instance.
 It consists of a minimally configures Symfony application and development environment
 and includes/integrates:
