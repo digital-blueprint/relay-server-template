@@ -376,16 +376,16 @@
         },
         {
             "name": "dbp/relay-maker-bundle",
-            "version": "v0.1.5",
+            "version": "v0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-maker-bundle.git",
-                "reference": "e419e4b28f5b375f74b83b396d131e7c4982b180"
+                "reference": "812e1730b903a8688548081898c070de62e91a63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-maker-bundle/zipball/e419e4b28f5b375f74b83b396d131e7c4982b180",
-                "reference": "e419e4b28f5b375f74b83b396d131e7c4982b180",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-maker-bundle/zipball/812e1730b903a8688548081898c070de62e91a63",
+                "reference": "812e1730b903a8688548081898c070de62e91a63",
                 "shasum": ""
             },
             "require": {
@@ -418,9 +418,9 @@
             "description": "A maker bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-maker-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-maker-bundle/tree/v0.1.5"
+                "source": "https://github.com/digital-blueprint/relay-maker-bundle/tree/v0.1.6"
             },
-            "time": "2023-04-12T11:34:42+00:00"
+            "time": "2023-04-12T11:44:07+00:00"
         },
         {
             "name": "doctrine/annotations",
