@@ -10,14 +10,11 @@
   "lockFileMaintenance": {
     "enabled": true
   },
+  "constraintsFiltering": "strict",
   "packageRules": [
     {
       "matchPackagePrefixes": ["symfony/"],
       "allowedVersions": "<6"
-    },
-    {
-      "matchPackageNames": ["friendsofphp/php-cs-fixer"],
-      "allowedVersions": "<3.5"
     }
   ],
   "docker": {
