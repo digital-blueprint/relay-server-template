@@ -1,6 +1,7 @@
 # DBP Relay API Server Template
 
-[GitHub](https://github.com/digital-blueprint/relay-server-template) | [Packagist](https://packagist.org/packages/dbp/relay-server-template)
+[GitHub](https://github.com/digital-blueprint/relay-server-template) |
+[Packagist](https://packagist.org/packages/dbp/relay-server-template)
 
 [![Test](https://github.com/digital-blueprint/relay-server-template/actions/workflows/test.yml/badge.svg)](https://github.com/digital-blueprint/relay-server-template/actions/workflows/test.yml)
 
