@@ -16,7 +16,7 @@ and includes/integrates:
 
 ## Creating your own API Instance using this Template
 
-```
+```bash
 composer create-project dbp/relay-server-template my-api "dev-main"
 ```
 
