@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    image: api-server-template
+    build: .
+    container_name: api-server-template
+    restart: unless-stopped
+    ports:
+      # http://localhost:8081
+      - "8081:80"
+
+#  web:
+#    image: ghcr.io/digital-blueprint/api-server-template:latest
+#    container_name: api-server-template
+#    restart: always
+#    ports:
+#      - "8081:80"
