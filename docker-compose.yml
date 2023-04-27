@@ -1,17 +1,17 @@
 version: '3'
 services:
   web:
-    image: api-server-template
+    image: relay-server-template
     build: .
-    container_name: api-server-template
+    container_name: relay-server-template
     restart: unless-stopped
     ports:
       # http://localhost:8081
       - "8081:80"
 
 #  web:
-#    image: ghcr.io/digital-blueprint/api-server-template:latest
-#    container_name: api-server-template
+#    image: ghcr.io/digital-blueprint/relay-server-template:main
+#    container_name: relay-server-template
 #    restart: always
 #    ports:
 #      - "8081:80"
