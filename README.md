@@ -17,7 +17,7 @@ and includes/integrates:
 ## Creating your own API Instance using this Template
 
 ```bash
-composer create-project dbp/relay-server-template my-api "dev-main"
+composer create-project dbp/relay-server-template my-api
 ```
 
 See https://handbook.digital-blueprint.org/relay/dev/getting_started for more information.
