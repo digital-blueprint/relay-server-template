@@ -103,9 +103,6 @@
     "fgrosse/phpasn1": {
         "version": "v2.3.0"
     },
-    "fig/link-util": {
-        "version": "1.1.2"
-    },
     "friendsofphp/php-cs-fixer": {
         "version": "3.2",
         "recipe": {
