@@ -237,16 +237,16 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.16",
+            "version": "v0.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-auth-bundle.git",
-                "reference": "d3ef94f75390793db9dd8bf3a236cfc37817f2fc"
+                "reference": "1792bc27dbdf9c97f2e77c828d150bd7dfee5e8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/d3ef94f75390793db9dd8bf3a236cfc37817f2fc",
-                "reference": "d3ef94f75390793db9dd8bf3a236cfc37817f2fc",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/1792bc27dbdf9c97f2e77c828d150bd7dfee5e8d",
+                "reference": "1792bc27dbdf9c97f2e77c828d150bd7dfee5e8d",
                 "shasum": ""
             },
             "require": {
@@ -295,22 +295,22 @@
             "description": "Authentification bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-auth-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.16"
+                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.17"
             },
-            "time": "2023-03-01T07:47:13+00:00"
+            "time": "2023-05-22T12:18:19+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.103",
+            "version": "v0.1.105",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-bundle.git",
-                "reference": "ba7595372088b8e33f53d68f37344d823613ae29"
+                "reference": "b722b9a0dd66e406ad749376633763f6496068a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/ba7595372088b8e33f53d68f37344d823613ae29",
-                "reference": "ba7595372088b8e33f53d68f37344d823613ae29",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/b722b9a0dd66e406ad749376633763f6496068a9",
+                "reference": "b722b9a0dd66e406ad749376633763f6496068a9",
                 "shasum": ""
             },
             "require": {
@@ -378,9 +378,9 @@
             "description": "The core bundle of the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.103"
+                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.105"
             },
-            "time": "2023-05-17T12:00:58+00:00"
+            "time": "2023-05-23T12:30:21+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
@@ -1182,20 +1182,21 @@
         },
         {
             "name": "kevinrob/guzzle-cache-middleware",
-            "version": "v4.0.2",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kevinrob/guzzle-cache-middleware.git",
-                "reference": "24b93edc942f2eaaeb17f7ae0d6db0f77f4ed4ea"
+                "reference": "8528f8c040c333480cbf885ef669dfb33a21f1e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kevinrob/guzzle-cache-middleware/zipball/24b93edc942f2eaaeb17f7ae0d6db0f77f4ed4ea",
-                "reference": "24b93edc942f2eaaeb17f7ae0d6db0f77f4ed4ea",
+                "url": "https://api.github.com/repos/Kevinrob/guzzle-cache-middleware/zipball/8528f8c040c333480cbf885ef669dfb33a21f1e8",
+                "reference": "8528f8c040c333480cbf885ef669dfb33a21f1e8",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.0 || ^7.0",
+                "guzzlehttp/promises": "^1.4 || ^2.0",
                 "guzzlehttp/psr7": "^1.7.0 || ^2.0.0",
                 "php": ">=7.2.0"
             },
@@ -1260,9 +1261,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Kevinrob/guzzle-cache-middleware/issues",
-                "source": "https://github.com/Kevinrob/guzzle-cache-middleware/tree/v4.0.2"
+                "source": "https://github.com/Kevinrob/guzzle-cache-middleware/tree/v4.1.0"
             },
-            "time": "2022-10-02T13:13:18+00:00"
+            "time": "2023-05-26T10:54:58+00:00"
         },
         {
             "name": "monolog/monolog",
