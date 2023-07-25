@@ -3,7 +3,7 @@
 Source: https://github.com/digital-blueprint/relay-server-template
 
 The server template can be used as a template/starting point for your own API instance.
-It consists of a minimally configures Symfony application and development environment
+It consists of a minimally configured Symfony application and development environment
 and includes/integrates:
 
 * The [dbp/relay-core-bundle](https://packagist.org/packages/dbp/relay-core-bundle): Which provides the base functionality and ties everything together
