@@ -384,23 +384,24 @@
         },
         {
             "name": "dbp/relay-maker-bundle",
-            "version": "v0.1.7",
+            "version": "v0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-maker-bundle.git",
-                "reference": "b5a5167b1effbbbf163284552f8c644fca82618d"
+                "reference": "345a9f9dce796b6996a46943d8c6f8ccfa5e1218"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-maker-bundle/zipball/b5a5167b1effbbbf163284552f8c644fca82618d",
-                "reference": "b5a5167b1effbbbf163284552f8c644fca82618d",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-maker-bundle/zipball/345a9f9dce796b6996a46943d8c6f8ccfa5e1218",
+                "reference": "345a9f9dce796b6996a46943d8c6f8ccfa5e1218",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.3",
                 "symfony/filesystem": "^5.4",
                 "symfony/framework-bundle": "^5.4",
-                "symfony/process": "^5.4"
+                "symfony/process": "^5.4",
+                "symfony/yaml": "^5.4"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.0",
@@ -426,9 +427,9 @@
             "description": "A maker bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-maker-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-maker-bundle/tree/v0.1.7"
+                "source": "https://github.com/digital-blueprint/relay-maker-bundle/tree/v0.1.8"
             },
-            "time": "2023-06-13T13:29:40+00:00"
+            "time": "2023-10-19T09:51:51+00:00"
         },
         {
             "name": "doctrine/annotations",
