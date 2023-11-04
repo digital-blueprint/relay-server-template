@@ -237,16 +237,16 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.17",
+            "version": "v0.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-auth-bundle.git",
-                "reference": "1792bc27dbdf9c97f2e77c828d150bd7dfee5e8d"
+                "reference": "aa15cb7a2d4721f5ce99290ed94ccf7cf0f80833"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/1792bc27dbdf9c97f2e77c828d150bd7dfee5e8d",
-                "reference": "1792bc27dbdf9c97f2e77c828d150bd7dfee5e8d",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/aa15cb7a2d4721f5ce99290ed94ccf7cf0f80833",
+                "reference": "aa15cb7a2d4721f5ce99290ed94ccf7cf0f80833",
                 "shasum": ""
             },
             "require": {
@@ -295,9 +295,9 @@
             "description": "Authentification bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-auth-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.17"
+                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.18"
             },
-            "time": "2023-05-22T12:18:19+00:00"
+            "time": "2023-11-02T15:01:05+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
@@ -3362,16 +3362,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.21.1",
+            "version": "v1.21.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "7c191ea3c4cd40d074810b2f4750eac2c241396c"
+                "reference": "f1cf4014ffac79e0c031cc40d6d66354e7de5da5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/7c191ea3c4cd40d074810b2f4750eac2c241396c",
-                "reference": "7c191ea3c4cd40d074810b2f4750eac2c241396c",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/f1cf4014ffac79e0c031cc40d6d66354e7de5da5",
+                "reference": "f1cf4014ffac79e0c031cc40d6d66354e7de5da5",
                 "shasum": ""
             },
             "require": {
@@ -3407,7 +3407,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v1.21.1"
+                "source": "https://github.com/symfony/flex/tree/v1.21.2"
             },
             "funding": [
                 {
@@ -3423,7 +3423,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-24T13:32:04+00:00"
+            "time": "2023-10-30T18:34:59+00:00"
         },
         {
             "name": "symfony/framework-bundle",
