@@ -237,16 +237,16 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.19",
+            "version": "v0.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-auth-bundle.git",
-                "reference": "9a96ae27e786c490b2dde32370980279ced12baf"
+                "reference": "77a6ed180ae1a118186c752eb9f4d46171ab5a30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/9a96ae27e786c490b2dde32370980279ced12baf",
-                "reference": "9a96ae27e786c490b2dde32370980279ced12baf",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/77a6ed180ae1a118186c752eb9f4d46171ab5a30",
+                "reference": "77a6ed180ae1a118186c752eb9f4d46171ab5a30",
                 "shasum": ""
             },
             "require": {
@@ -295,9 +295,9 @@
             "description": "Authentification bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-auth-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.19"
+                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.20"
             },
-            "time": "2023-11-06T13:20:59+00:00"
+            "time": "2023-11-16T12:24:58+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
