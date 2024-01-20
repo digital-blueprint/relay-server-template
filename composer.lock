@@ -237,16 +237,16 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.21",
+            "version": "v0.1.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-auth-bundle.git",
-                "reference": "2fe0d3f0b99855ae5491b6005797d1f2935867d8"
+                "reference": "d60c9f3cac52dbe59300e4fc1412c6036b8f2a7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/2fe0d3f0b99855ae5491b6005797d1f2935867d8",
-                "reference": "2fe0d3f0b99855ae5491b6005797d1f2935867d8",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/d60c9f3cac52dbe59300e4fc1412c6036b8f2a7d",
+                "reference": "d60c9f3cac52dbe59300e4fc1412c6036b8f2a7d",
                 "shasum": ""
             },
             "require": {
@@ -256,7 +256,7 @@
                 "ext-json": "*",
                 "guzzlehttp/guzzle": "^7.0",
                 "kevinrob/guzzle-cache-middleware": "^3.3 || ^4.0 || ^5.0",
-                "php": ">=7.3",
+                "php": ">=7.4",
                 "symfony/framework-bundle": "^5.2",
                 "symfony/security-core": "^5.2",
                 "symfony/yaml": "^5.2",
@@ -295,9 +295,9 @@
             "description": "Authentification bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-auth-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.21"
+                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.22"
             },
-            "time": "2023-11-22T13:29:12+00:00"
+            "time": "2024-01-15T13:53:04+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
@@ -9004,16 +9004,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.15",
+            "version": "9.6.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "05017b80304e0eb3f31d90194a563fd53a6021f1"
+                "reference": "3767b2c56ce02d01e3491046f33466a1ae60a37f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/05017b80304e0eb3f31d90194a563fd53a6021f1",
-                "reference": "05017b80304e0eb3f31d90194a563fd53a6021f1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3767b2c56ce02d01e3491046f33466a1ae60a37f",
+                "reference": "3767b2c56ce02d01e3491046f33466a1ae60a37f",
                 "shasum": ""
             },
             "require": {
@@ -9087,7 +9087,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.15"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.16"
             },
             "funding": [
                 {
@@ -9103,7 +9103,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-01T16:55:19+00:00"
+            "time": "2024-01-19T07:03:14+00:00"
         },
         {
             "name": "sebastian/cli-parser",
