@@ -15,6 +15,7 @@
         "symfony/flex": "^1.19.3",
         "symfony/framework-bundle": "^5.4.11",
         "symfony/monolog-bundle": "^3.8",
+        "symfony/http-kernel": "^5.4",
         "symfony/yaml": "^5.4.11"
     },
     "config": {
