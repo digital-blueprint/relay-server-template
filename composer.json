@@ -4,7 +4,7 @@
     "type": "project",
     "license": "AGPL-3.0-or-later",
     "require": {
-        "php": ">=7.4",
+        "php": ">=8.1",
         "ext-intl": "*",
         "dbp/relay-auth-bundle": "^0.1.14",
         "dbp/relay-core-bundle": "^0.1.64",
@@ -25,7 +25,7 @@
         },
         "sort-packages": true,
         "platform": {
-            "php": "7.4"
+            "php": "8.1"
         },
         "allow-plugins": {
             "symfony/flex": true,

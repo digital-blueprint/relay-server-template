@@ -1,4 +1,4 @@
-FROM debian:bullseye
+FROM debian:bookworm
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -15,24 +15,24 @@ RUN apt-get update \
         git \
         openssh-client \
         php-apcu \
-        php-apcu-bc \
-        php7.4-cli \
-        php7.4-curl \
-        php7.4-gd \
-        php7.4-soap \
-        php7.4-json \
-        php7.4-mbstring \
-        php7.4-mysql \
-        php7.4-opcache \
-        php7.4-readline \
-        php7.4-xml \
-        php7.4-intl \
-        php7.4-zip \
-        php7.4-redis \
-        php7.4-fpm \
-        php7.4-ldap \
-        php7.4-gmp \
-        php7.4-xdebug \
+        php-cli \
+        php-curl \
+        php-gd \
+        php-soap \
+        php-sqlite3 \
+        php-json \
+        php-mbstring \
+        php-mysql \
+        php-opcache \
+        php-readline \
+        php-xml \
+        php-intl \
+        php-zip \
+        php-redis \
+        php-fpm \
+        php-ldap \
+        php-gmp \
+        php-xdebug \
         composer \
         supervisor \
     && apt-get clean \
@@ -51,12 +51,12 @@ RUN echo 'user ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # Install a newer composer
 RUN mkdir -p /home/user/.local/bin
-RUN curl -L https://github.com/composer/getcomposer.org/raw/main/web/download/2.3.7/composer.phar -o /home/user/.local/bin/composer
+RUN curl -L https://github.com/composer/getcomposer.org/raw/main/web/download/2.7.1/composer.phar -o /home/user/.local/bin/composer
 RUN chmod a+x /home/user/.local/bin/composer
 ENV PATH "/home/user/.local/bin:${PATH}"
 
 USER user
 
-CMD ["/usr/sbin/php-fpm7.4", "-O" ]
+CMD ["/usr/sbin/php-fpm8.2", "-O" ]
 EXPOSE 9000
 WORKDIR "/application"

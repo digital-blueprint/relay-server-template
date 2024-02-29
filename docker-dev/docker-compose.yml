@@ -20,8 +20,8 @@ services:
     working_dir: /application
     volumes:
       - ..:/application
-      - ./php-fpm/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini
-      - ./php-fpm/php-fpm-overrides.conf:/etc/php/7.4/fpm/pool.d/z-overrides.conf
+      - ./php-fpm/php-ini-overrides.ini:/etc/php/8.2/fpm/conf.d/99-overrides.ini
+      - ./php-fpm/php-fpm-overrides.conf:/etc/php/8.2/fpm/pool.d/z-overrides.conf
 
   queue-worker:
     environment:
@@ -35,7 +35,7 @@ services:
     volumes:
       - ./php-fpm/queue-worker.conf:/etc/supervisor/conf.d/queue-worker.conf
       - ..:/application
-      - ./php-fpm/php-ini-overrides.ini:/etc/php/7.4/cli/conf.d/99-overrides.ini
+      - ./php-fpm/php-ini-overrides.ini:/etc/php/8.2/cli/conf.d/99-overrides.ini
 
   cron:
     build:
@@ -46,10 +46,10 @@ services:
     entrypoint: /cron.sh
     volumes:
       - ..:/application
-      - ./php-fpm/php-ini-overrides.ini:/etc/php/7.4/cli/conf.d/99-overrides.ini
+      - ./php-fpm/php-ini-overrides.ini:/etc/php/8.2/cli/conf.d/99-overrides.ini
 
   mariadb:
-    image: mariadb:10.3
+    image: mariadb:10.11
     volumes:
       - mariadb-data:/var/lib/mysql
     environment:

@@ -1,10 +1,7 @@
 FROM composer:2 AS composer
 RUN composer --version
 
-#FROM php:8.2-cli AS build
-#COPY --from=composer /usr/bin/composer /usr/bin/composer
-
-FROM debian:bullseye as build
+FROM debian:bookworm as build
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -17,28 +14,30 @@ RUN apt-get update \
         git \
         openssh-client \
         php-apcu \
-        php-apcu-bc \
-        php7.4-cli \
-        php7.4-curl \
-        php7.4-gd \
-        php7.4-soap \
-        php7.4-json \
-        php7.4-mbstring \
-        php7.4-mysql \
-        php7.4-opcache \
-        php7.4-readline \
-        php7.4-xml \
-        php7.4-intl \
-        php7.4-zip \
-        php7.4-redis \
-        php7.4-fpm \
-        php7.4-ldap \
-        php7.4-gmp \
+        php-cli \
+        php-curl \
+        php-gd \
+        php-soap \
+        php-sqlite3 \
+        php-json \
+        php-mbstring \
+        php-mysql \
+        php-opcache \
+        php-readline \
+        php-xml \
+        php-intl \
+        php-zip \
+        php-redis \
+        php-fpm \
+        php-ldap \
+        php-gmp \
         composer
 
 # copying the source directory and install the dependencies with composer
 COPY . /app
 WORKDIR /app
+
+ENV COMPOSER_ALLOW_SUPERUSER=1
 
 # run composer install to install the dependencies
 RUN composer install \
