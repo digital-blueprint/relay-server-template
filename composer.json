@@ -112,6 +112,6 @@
         "symfony/stopwatch": "^5.4.35",
         "symfony/var-dumper": "^5.4.36",
         "symfony/web-profiler-bundle": "^5.4.36",
-        "vimeo/psalm": "^4.30"
+        "vimeo/psalm": "^5.22.2"
     }
 }
