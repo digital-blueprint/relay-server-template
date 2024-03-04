@@ -6,7 +6,6 @@
     ":automergePatch"
   ],
   "ignorePresets": [":prHourlyLimit2"],
-  "ignorePlugins": false,
   "rangeStrategy": "update-lockfile",
   "lockFileMaintenance": {
     "enabled": true
