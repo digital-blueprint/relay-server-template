@@ -279,9 +279,6 @@
     "spomky-labs/base64url": {
         "version": "v2.0.4"
     },
-    "symfony/amqp-messenger": {
-        "version": "v5.3.7"
-    },
     "symfony/apache-pack": {
         "version": "1.0",
         "recipe": {
@@ -338,9 +335,6 @@
     },
     "symfony/deprecation-contracts": {
         "version": "v2.4.0"
-    },
-    "symfony/doctrine-messenger": {
-        "version": "v5.3.10"
     },
     "symfony/dom-crawler": {
         "version": "v5.3.7"
@@ -487,9 +481,6 @@
     "symfony/polyfill-php72": {
         "version": "v1.23.0"
     },
-    "symfony/polyfill-php73": {
-        "version": "v1.23.0"
-    },
     "symfony/polyfill-php80": {
         "version": "v1.23.1"
     },
@@ -507,9 +498,6 @@
     },
     "symfony/property-info": {
         "version": "v5.3.8"
-    },
-    "symfony/redis-messenger": {
-        "version": "v5.3.10"
     },
     "symfony/routing": {
         "version": "5.4",
@@ -541,9 +529,6 @@
     },
     "symfony/security-csrf": {
         "version": "v5.3.4"
-    },
-    "symfony/security-guard": {
-        "version": "v5.3.7"
     },
     "symfony/security-http": {
         "version": "v5.3.10"
