@@ -237,20 +237,20 @@
         },
         {
             "name": "dbp/relay-auth-bundle",
-            "version": "v0.1.24",
+            "version": "v0.1.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-auth-bundle.git",
-                "reference": "464a11066d3afaa40843b4f73f34d8530c24e5ae"
+                "reference": "d83f5e69235cdda1d54d3b0931236b3cc995ad4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/464a11066d3afaa40843b4f73f34d8530c24e5ae",
-                "reference": "464a11066d3afaa40843b4f73f34d8530c24e5ae",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-auth-bundle/zipball/d83f5e69235cdda1d54d3b0931236b3cc995ad4b",
+                "reference": "d83f5e69235cdda1d54d3b0931236b3cc995ad4b",
                 "shasum": ""
             },
             "require": {
-                "dbp/relay-core-bundle": "^0.1.142",
+                "dbp/relay-core-bundle": "^0.1.148",
                 "ext-curl": "*",
                 "ext-gmp": "*",
                 "ext-json": "*",
@@ -259,39 +259,32 @@
                 "kevinrob/guzzle-cache-middleware": "^3.3 || ^4.0 || ^5.0",
                 "php": ">=8.1",
                 "psr/log": "^1.1.4 || ^2.0 || ^3.0",
-                "symfony/cache": "^5.4",
+                "symfony/cache": "^5.4 || ^6.4",
                 "symfony/cache-contracts": "^2.5",
-                "symfony/clock": "^6.4",
-                "symfony/config": "^5.4",
-                "symfony/dependency-injection": "^5.4",
-                "symfony/framework-bundle": "^5.2",
-                "symfony/http-foundation": "^5.4",
-                "symfony/http-kernel": "^5.4",
-                "symfony/security-core": "^5.2",
-                "symfony/security-http": "^5.4",
-                "symfony/yaml": "^5.2",
+                "symfony/clock": "^5.4 || ^6.4",
+                "symfony/config": "^5.4 || ^6.4",
+                "symfony/dependency-injection": "^5.4 || ^6.4",
+                "symfony/framework-bundle": "^5.4 || ^6.4",
+                "symfony/http-foundation": "^5.4 || ^6.4",
+                "symfony/http-kernel": "^5.4 || ^6.4",
+                "symfony/security-core": "^5.4 || ^6.4",
+                "symfony/security-http": "^5.4 || ^6.4",
+                "symfony/yaml": "^5.4 || ^6.4",
                 "web-token/jwt-library": "^3.3"
             },
             "require-dev": {
-                "brainmaestro/composer-git-hooks": "^2.8.5",
-                "friendsofphp/php-cs-fixer": "^3.50",
+                "captainhook/captainhook": "^5.21.2",
+                "friendsofphp/php-cs-fixer": "^3.51",
                 "phpstan/phpstan": "^1.10.59",
                 "phpstan/phpstan-phpunit": "^1.3.16",
-                "phpstan/phpstan-symfony": "^1.3.7",
+                "phpstan/phpstan-symfony": "^1.3.8",
                 "phpunit/phpunit": "^9.6.17",
-                "symfony/browser-kit": "^5.4.35",
-                "symfony/http-client": "^5.4.36",
-                "symfony/phpunit-bridge": "^5.4.36",
+                "symfony/browser-kit": "^5.4 || ^6.4",
+                "symfony/http-client": "^5.4 || ^6.4",
+                "symfony/phpunit-bridge": "^5.4 ||  ^6.4",
                 "vimeo/psalm": "^5.22.2"
             },
             "type": "symfony-bundle",
-            "extra": {
-                "hooks": {
-                    "pre-commit": [
-                        "composer lint"
-                    ]
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Dbp\\Relay\\AuthBundle\\": "src/"
@@ -304,93 +297,89 @@
             "description": "Authentification bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-auth-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.24"
+                "source": "https://github.com/digital-blueprint/relay-auth-bundle/tree/v0.1.26"
             },
-            "time": "2024-02-29T16:31:12+00:00"
+            "time": "2024-03-06T14:25:31+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.143",
+            "version": "v0.1.148",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-bundle.git",
-                "reference": "4af2748fe552a5a37d014666546b8b392446a989"
+                "reference": "89ca280a3245cfca50dfa90acfe527966b1301e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/4af2748fe552a5a37d014666546b8b392446a989",
-                "reference": "4af2748fe552a5a37d014666546b8b392446a989",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/89ca280a3245cfca50dfa90acfe527966b1301e3",
+                "reference": "89ca280a3245cfca50dfa90acfe527966b1301e3",
                 "shasum": ""
             },
             "require": {
                 "api-platform/core": "^2.7.11",
                 "doctrine/annotations": "^1.13 || ^2.0",
-                "dragonmantank/cron-expression": "^3.3",
+                "dragonmantank/cron-expression": "^3.3.3",
                 "ext-fileinfo": "*",
                 "ext-intl": "*",
                 "ext-json": "*",
                 "guzzlehttp/guzzle": "^7.5",
                 "kevinrob/guzzle-cache-middleware": "^4.0 || ^5.0",
+                "monolog/monolog": "^2.9",
                 "nelmio/cors-bundle": "^2.2",
                 "php": ">=8.1",
                 "phpdocumentor/reflection-docblock": "^3.0 || ^4.0 || ^5.0",
                 "psr/cache": "^1.0.1 || ^2.0.0 || ^3.0.0",
                 "psr/http-message": "^1.0 || ^2.0",
                 "psr/log": "^1.1.4 || ^2.0.0 || ^3.0.0",
-                "symfony/asset": "^5.4",
-                "symfony/cache": "^5.4",
-                "symfony/config": "^5.4",
-                "symfony/console": "^5.4",
-                "symfony/dependency-injection": "^5.4",
-                "symfony/error-handler": "^5.4",
-                "symfony/event-dispatcher": "^5.4",
+                "symfony/asset": "^5.4 || ^6.4",
+                "symfony/cache": "^5.4 || ^6.4",
+                "symfony/config": "^5.4 || ^6.4",
+                "symfony/console": "^5.4 || ^6.4",
+                "symfony/dependency-injection": "^5.4 || ^6.4",
+                "symfony/error-handler": "^5.4 || ^6.4",
+                "symfony/event-dispatcher": "^5.4 || ^6.4",
                 "symfony/event-dispatcher-contracts": "^2.0 || ^3.0",
-                "symfony/expression-language": "^5.4",
-                "symfony/filesystem": "^5.4",
-                "symfony/framework-bundle": "^5.4",
-                "symfony/http-foundation": "^5.4",
-                "symfony/http-kernel": "^5.4",
-                "symfony/lock": "^5.4",
-                "symfony/messenger": "^5.4",
-                "symfony/mime": "^5.4",
+                "symfony/expression-language": "^5.4 || ^6.4",
+                "symfony/filesystem": "^5.4 || ^6.4",
+                "symfony/framework-bundle": "^5.4 || ^6.4",
+                "symfony/http-foundation": "^5.4 || ^6.4",
+                "symfony/http-kernel": "^5.4 || ^6.4",
+                "symfony/lock": "^5.4 || ^6.4",
+                "symfony/messenger": "^5.4 || ^6.4",
+                "symfony/mime": "^5.4 || ^6.4",
                 "symfony/monolog-bundle": "^3.8",
-                "symfony/process": "^5.4",
-                "symfony/redis-messenger": "^5.4",
-                "symfony/routing": "^5.4",
-                "symfony/security-bundle": "^5.4",
-                "symfony/security-core": "^5.4",
-                "symfony/security-guard": "^5.4",
-                "symfony/security-http": "^5.4",
-                "symfony/serializer": "^5.4",
-                "symfony/twig-bundle": "^5.4",
-                "symfony/uid": "^5.4",
-                "symfony/validator": "^5.4",
-                "symfony/yaml": "^5.4"
+                "symfony/process": "^5.4 || ^6.4",
+                "symfony/routing": "^5.4 || ^6.4",
+                "symfony/security-bundle": "^5.4 || ^6.4",
+                "symfony/security-core": "^5.4 || ^6.4",
+                "symfony/security-http": "^5.4 || ^6.4",
+                "symfony/serializer": "^5.4 || ^6.4",
+                "symfony/twig-bundle": "^5.4 || ^6.4",
+                "symfony/uid": "^5.4 || ^6.4",
+                "symfony/validator": "^5.4 || ^6.4",
+                "symfony/yaml": "^5.4 || ^6.4"
             },
             "conflict": {
-                "symfony/dependency-injection": "5.3.7"
+                "symfony/amqp-messenger": ">=6.0 <6.4",
+                "symfony/property-info": ">=6.0 <6.4",
+                "symfony/twig-bridge": ">=6.0 <6.4",
+                "willdurand/negotiation": "<3"
             },
             "require-dev": {
-                "brainmaestro/composer-git-hooks": "^2.8.5",
-                "friendsofphp/php-cs-fixer": "^3.50",
+                "captainhook/captainhook": "^5.21.2",
+                "friendsofphp/php-cs-fixer": "^3.51",
                 "phpstan/phpstan": "^1.10.59",
                 "phpstan/phpstan-phpunit": "^1.3.16",
-                "phpstan/phpstan-symfony": "^1.3.7",
+                "phpstan/phpstan-symfony": "^1.3.8",
                 "phpunit/phpunit": "^9.6.17",
                 "psalm/plugin-symfony": "^5.1",
-                "symfony/browser-kit": "^5.4.35",
-                "symfony/http-client": "^5.4.35",
-                "symfony/phpunit-bridge": "^5.4.35",
+                "symfony/browser-kit": "^5.4 || ^6.4",
+                "symfony/http-client": "^5.4 || ^6.4",
+                "symfony/monolog-bridge": "^5.4 || ^6.4",
+                "symfony/phpunit-bridge": "^5.4 || ^6.4",
                 "vimeo/psalm": "^5.22.2"
             },
             "type": "symfony-bundle",
-            "extra": {
-                "hooks": {
-                    "pre-commit": [
-                        "composer lint"
-                    ]
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Dbp\\Relay\\CoreBundle\\": "src/"
@@ -403,46 +392,46 @@
             "description": "The core bundle of the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.143"
+                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.148"
             },
-            "time": "2024-02-28T13:05:27+00:00"
+            "time": "2024-03-06T14:03:37+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
-            "version": "v0.1.10",
+            "version": "v0.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-maker-bundle.git",
-                "reference": "a16c6d5c4f33d5774a2b32917f7120ab4742d3e8"
+                "reference": "0870714def107c1d1674a2f79803f630def53e92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-maker-bundle/zipball/a16c6d5c4f33d5774a2b32917f7120ab4742d3e8",
-                "reference": "a16c6d5c4f33d5774a2b32917f7120ab4742d3e8",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-maker-bundle/zipball/0870714def107c1d1674a2f79803f630def53e92",
+                "reference": "0870714def107c1d1674a2f79803f630def53e92",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "symfony/config": "^5.4",
-                "symfony/console": "^5.4",
-                "symfony/dependency-injection": "^5.4",
-                "symfony/filesystem": "^5.4",
-                "symfony/framework-bundle": "^5.4",
-                "symfony/http-kernel": "^5.4",
-                "symfony/process": "^5.4",
-                "symfony/yaml": "^5.4"
+                "symfony/config": "^5.4 || ^6.4",
+                "symfony/console": "^5.4 || ^6.4",
+                "symfony/dependency-injection": "^5.4 || ^6.4",
+                "symfony/filesystem": "^5.4 || ^6.4",
+                "symfony/framework-bundle": "^5.4 || ^6.4",
+                "symfony/http-kernel": "^5.4 || ^6.4",
+                "symfony/process": "^5.4 || ^6.4",
+                "symfony/yaml": "^5.4 || ^6.4"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.50",
                 "phpstan/phpstan": "^1.10.59",
                 "phpstan/phpstan-phpunit": "^1.3.16",
                 "phpunit/phpunit": "^9.6.17",
-                "symfony/browser-kit": "^5.4.35",
-                "symfony/error-handler": "^5.4.36",
-                "symfony/http-client": "^5.4.36",
-                "symfony/monolog-bridge": "^5.4.35",
+                "symfony/browser-kit": "^5.4 || ^6.4",
+                "symfony/error-handler": "^5.4 || ^6.4",
+                "symfony/http-client": "^5.4 || ^6.4",
+                "symfony/monolog-bridge": "^5.4 || ^6.4",
                 "symfony/monolog-bundle": "^3.10",
-                "symfony/phpunit-bridge": "^5.4.36",
+                "symfony/phpunit-bridge": "^5.4 || ^6.4",
                 "vimeo/psalm": "^5.22.2"
             },
             "type": "symfony-bundle",
@@ -458,9 +447,9 @@
             "description": "A maker bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-maker-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-maker-bundle/tree/v0.1.10"
+                "source": "https://github.com/digital-blueprint/relay-maker-bundle/tree/v0.1.11"
             },
-            "time": "2024-02-27T12:34:19+00:00"
+            "time": "2024-03-06T14:36:45+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -2766,16 +2755,16 @@
         },
         {
             "name": "symfony/clock",
-            "version": "v6.4.3",
+            "version": "v6.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/clock.git",
-                "reference": "f48770105c544001da00b8d745873a628e0de198"
+                "reference": "ecba44be4def12cd71e0460b956ab7e51a2c980e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/clock/zipball/f48770105c544001da00b8d745873a628e0de198",
-                "reference": "f48770105c544001da00b8d745873a628e0de198",
+                "url": "https://api.github.com/repos/symfony/clock/zipball/ecba44be4def12cd71e0460b956ab7e51a2c980e",
+                "reference": "ecba44be4def12cd71e0460b956ab7e51a2c980e",
                 "shasum": ""
             },
             "require": {
@@ -2820,7 +2809,7 @@
                 "time"
             ],
             "support": {
-                "source": "https://github.com/symfony/clock/tree/v6.4.3"
+                "source": "https://github.com/symfony/clock/tree/v6.4.5"
             },
             "funding": [
                 {
@@ -2836,7 +2825,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T14:51:35+00:00"
+            "time": "2024-03-01T14:02:27+00:00"
         },
         {
             "name": "symfony/config",
@@ -3955,16 +3944,16 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v5.4.36",
+            "version": "v5.4.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "3e147c34ce44644f7bf7c2b8c8ecf76c0aac94b9"
+                "reference": "63d93fd99523b9608929a38172da3365a6c0821c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/3e147c34ce44644f7bf7c2b8c8ecf76c0aac94b9",
-                "reference": "3e147c34ce44644f7bf7c2b8c8ecf76c0aac94b9",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/63d93fd99523b9608929a38172da3365a6c0821c",
+                "reference": "63d93fd99523b9608929a38172da3365a6c0821c",
                 "shasum": ""
             },
             "require": {
@@ -4026,7 +4015,7 @@
                 "http"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/v5.4.36"
+                "source": "https://github.com/symfony/http-client/tree/v5.4.37"
             },
             "funding": [
                 {
@@ -4042,7 +4031,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-14T15:13:37+00:00"
+            "time": "2024-02-28T15:18:15+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -4200,16 +4189,16 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v5.4.36",
+            "version": "v5.4.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "63a872e01fd70802b77023e2f5924170c99b2825"
+                "reference": "4ef7ed872564852b3c6c15fecf492975a52cbff3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/63a872e01fd70802b77023e2f5924170c99b2825",
-                "reference": "63a872e01fd70802b77023e2f5924170c99b2825",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/4ef7ed872564852b3c6c15fecf492975a52cbff3",
+                "reference": "4ef7ed872564852b3c6c15fecf492975a52cbff3",
                 "shasum": ""
             },
             "require": {
@@ -4292,7 +4281,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v5.4.36"
+                "source": "https://github.com/symfony/http-kernel/tree/v5.4.37"
             },
             "funding": [
                 {
@@ -4308,7 +4297,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-27T06:22:59+00:00"
+            "time": "2024-03-04T20:55:44+00:00"
         },
         {
             "name": "symfony/lock",
@@ -5889,16 +5878,16 @@
         },
         {
             "name": "symfony/routing",
-            "version": "v5.4.35",
+            "version": "v5.4.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "86c5a06a61ddaf17efa1403542e3d7146af96203"
+                "reference": "48ae43e443693ddb4e574f7c12f0d17ce287694e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/86c5a06a61ddaf17efa1403542e3d7146af96203",
-                "reference": "86c5a06a61ddaf17efa1403542e3d7146af96203",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/48ae43e443693ddb4e574f7c12f0d17ce287694e",
+                "reference": "48ae43e443693ddb4e574f7c12f0d17ce287694e",
                 "shasum": ""
             },
             "require": {
@@ -5959,7 +5948,7 @@
                 "url"
             ],
             "support": {
-                "source": "https://github.com/symfony/routing/tree/v5.4.35"
+                "source": "https://github.com/symfony/routing/tree/v5.4.37"
             },
             "funding": [
                 {
@@ -5975,20 +5964,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-30T13:10:15+00:00"
+            "time": "2024-02-27T09:52:32+00:00"
         },
         {
             "name": "symfony/security-bundle",
-            "version": "v5.4.36",
+            "version": "v5.4.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "ce85db13f4049dd40fbd7b98999f77f146191d35"
+                "reference": "6773ef12fe2671a42f111e31f2c18af18e79c55c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/ce85db13f4049dd40fbd7b98999f77f146191d35",
-                "reference": "ce85db13f4049dd40fbd7b98999f77f146191d35",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/6773ef12fe2671a42f111e31f2c18af18e79c55c",
+                "reference": "6773ef12fe2671a42f111e31f2c18af18e79c55c",
                 "shasum": ""
             },
             "require": {
@@ -6062,7 +6051,7 @@
             "description": "Provides a tight integration of the Security component into the Symfony full-stack framework",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/security-bundle/tree/v5.4.36"
+                "source": "https://github.com/symfony/security-bundle/tree/v5.4.37"
             },
             "funding": [
                 {
@@ -6078,7 +6067,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-15T11:19:14+00:00"
+            "time": "2024-03-01T19:35:15+00:00"
         },
         {
             "name": "symfony/security-core",
@@ -8904,16 +8893,16 @@
         },
         {
             "name": "phpstan/phpstan-symfony",
-            "version": "1.3.7",
+            "version": "1.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-symfony.git",
-                "reference": "ef7db637be9b85fa00278fc3477ac66abe8eb7d1"
+                "reference": "d8a0bc03a68d95288b6471c37d435647fbdaff1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/ef7db637be9b85fa00278fc3477ac66abe8eb7d1",
-                "reference": "ef7db637be9b85fa00278fc3477ac66abe8eb7d1",
+                "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/d8a0bc03a68d95288b6471c37d435647fbdaff1a",
+                "reference": "d8a0bc03a68d95288b6471c37d435647fbdaff1a",
                 "shasum": ""
             },
             "require": {
@@ -8970,9 +8959,9 @@
             "description": "Symfony Framework extensions and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-symfony/issues",
-                "source": "https://github.com/phpstan/phpstan-symfony/tree/1.3.7"
+                "source": "https://github.com/phpstan/phpstan-symfony/tree/1.3.8"
             },
-            "time": "2024-01-10T21:54:42+00:00"
+            "time": "2024-03-05T16:33:08+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
