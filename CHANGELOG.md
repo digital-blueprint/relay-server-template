@@ -1,3 +1,7 @@
+# v0.2.0
+
+* Update from Symfony 5.4 to 6.4
+
 # v0.1.9
 
 * Drop support for PHP 7.4/8.0
