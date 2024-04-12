@@ -1,3 +1,7 @@
+# v0.2.1
+
+* Pin api-platform version to 2.7 until 3.2 is fully tested and supported
+
 # v0.2.0
 
 * Update from Symfony 5.4 to 6.4
