@@ -9,7 +9,7 @@ return [
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true],
     Symfony\Bundle\SecurityBundle\SecurityBundle::class => ['all' => true],
     Nelmio\CorsBundle\NelmioCorsBundle::class => ['all' => true],
-    ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle::class => ['all' => true],
+    ApiPlatform\Symfony\Bundle\ApiPlatformBundle::class => ['all' => true],
     Dbp\Relay\AuthBundle\DbpRelayAuthBundle::class => ['all' => true],
     Dbp\Relay\MakerBundle\DbpRelayMakerBundle::class => ['all' => true],
     Dbp\Relay\CoreBundle\DbpRelayCoreBundle::class => ['all' => true],
