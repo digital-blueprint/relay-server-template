@@ -1,3 +1,7 @@
+# v0.3.0
+
+* Update to api-platform 3.2
+
 # v0.2.1
 
 * Pin api-platform version to 2.7 until 3.2 is fully tested and supported
