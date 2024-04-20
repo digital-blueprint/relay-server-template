@@ -301,16 +301,16 @@
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.157",
+            "version": "v0.1.158",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-bundle.git",
-                "reference": "4e55c83dbd4ce782829e1c216eddd730feb4ce68"
+                "reference": "3fd1a1ef932eb7899c0bad82f0fdf254dcbca5f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/4e55c83dbd4ce782829e1c216eddd730feb4ce68",
-                "reference": "4e55c83dbd4ce782829e1c216eddd730feb4ce68",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/3fd1a1ef932eb7899c0bad82f0fdf254dcbca5f0",
+                "reference": "3fd1a1ef932eb7899c0bad82f0fdf254dcbca5f0",
                 "shasum": ""
             },
             "require": {
@@ -393,9 +393,9 @@
             "description": "The core bundle of the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.157"
+                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.158"
             },
-            "time": "2024-04-18T10:13:59+00:00"
+            "time": "2024-04-18T14:52:44+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
@@ -6950,16 +6950,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.9.2",
+            "version": "v3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "856cb5a6cfd6f3e4dc1f6c9a8f54e259503f7cf3"
+                "reference": "a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/856cb5a6cfd6f3e4dc1f6c9a8f54e259503f7cf3",
-                "reference": "856cb5a6cfd6f3e4dc1f6c9a8f54e259503f7cf3",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58",
+                "reference": "a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58",
                 "shasum": ""
             },
             "require": {
@@ -7013,7 +7013,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.9.2"
+                "source": "https://github.com/twigphp/Twig/tree/v3.9.3"
             },
             "funding": [
                 {
@@ -7025,7 +7025,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-17T14:16:25+00:00"
+            "time": "2024-04-18T11:59:33+00:00"
         },
         {
             "name": "web-token/jwt-library",
