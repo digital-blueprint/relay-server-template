@@ -422,16 +422,16 @@
         },
         {
             "name": "dbp/relay-maker-bundle",
-            "version": "v0.1.11",
+            "version": "v0.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-maker-bundle.git",
-                "reference": "0870714def107c1d1674a2f79803f630def53e92"
+                "reference": "914de8ce3f3904eaf13e6806899918285d8fc330"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-maker-bundle/zipball/0870714def107c1d1674a2f79803f630def53e92",
-                "reference": "0870714def107c1d1674a2f79803f630def53e92",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-maker-bundle/zipball/914de8ce3f3904eaf13e6806899918285d8fc330",
+                "reference": "914de8ce3f3904eaf13e6806899918285d8fc330",
                 "shasum": ""
             },
             "require": {
@@ -449,7 +449,7 @@
                 "friendsofphp/php-cs-fixer": "^3.50",
                 "phpstan/phpstan": "^1.10.59",
                 "phpstan/phpstan-phpunit": "^1.3.16",
-                "phpunit/phpunit": "^9.6.17",
+                "phpunit/phpunit": "^10.1",
                 "symfony/browser-kit": "^5.4 || ^6.4",
                 "symfony/error-handler": "^5.4 || ^6.4",
                 "symfony/http-client": "^5.4 || ^6.4",
@@ -471,9 +471,9 @@
             "description": "A maker bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-maker-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-maker-bundle/tree/v0.1.11"
+                "source": "https://github.com/digital-blueprint/relay-maker-bundle/tree/v0.1.12"
             },
-            "time": "2024-03-06T14:36:45+00:00"
+            "time": "2024-05-16T11:28:28+00:00"
         },
         {
             "name": "doctrine/annotations",
