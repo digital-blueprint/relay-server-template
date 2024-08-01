@@ -7,7 +7,7 @@ It consists of a minimally configured Symfony application and development enviro
 and includes/integrates:
 
 * The [dbp/relay-core-bundle](https://packagist.org/packages/dbp/relay-core-bundle): Which provides the base functionality and ties everything together
-* The [dbp/relay-auth-bundle](https://packagist.org/packages/dbp/relay-auth-bundle): Which provides authentication via OIDC
+* The [dbp/relay-core-connector-oidc-bundle](https://packagist.org/packages/dbp/relay-core-connector-oidc-bundle): Which provides authentication via OIDC
 * A docker-compose based development environment
 * Linter/Unittest integration
 
