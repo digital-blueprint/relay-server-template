@@ -7,6 +7,9 @@
   ],
   "ignorePresets": [":prHourlyLimit2"],
   "rangeStrategy": "update-lockfile",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "constraintsFiltering": "strict",
   "packageRules": [
   ],
