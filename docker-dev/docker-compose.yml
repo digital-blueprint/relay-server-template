@@ -57,6 +57,8 @@ services:
       - MYSQL_USER=user
       - MYSQL_PASSWORD=secret
       - MYSQL_ROOT_PASSWORD=root-secret
+      - MARIADB_AUTO_UPGRADE=1
+      - MARIADB_DISABLE_UPGRADE_BACKUP=1
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
