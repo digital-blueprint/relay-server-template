@@ -256,16 +256,16 @@
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.179",
+            "version": "v0.1.180",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-bundle.git",
-                "reference": "963729991bdbf1feef51e319fa3e5bf970950748"
+                "reference": "a424b24d8613eef9bcb3e58fc203cde9902ec8fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/963729991bdbf1feef51e319fa3e5bf970950748",
-                "reference": "963729991bdbf1feef51e319fa3e5bf970950748",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/a424b24d8613eef9bcb3e58fc203cde9902ec8fe",
+                "reference": "a424b24d8613eef9bcb3e58fc203cde9902ec8fe",
                 "shasum": ""
             },
             "require": {
@@ -315,6 +315,7 @@
                 "api-platform/core": "2.7.17",
                 "carbonphp/carbon-doctrine-types": ">=3",
                 "dbp/relay-auth-bundle": "*",
+                "dbp/relay-core-connector-oidc-bundle": "<=0.1.33",
                 "doctrine/dbal": ">=4",
                 "symfony/amqp-messenger": ">=6.0 <6.4",
                 "symfony/property-info": ">=6.0 <6.4",
@@ -350,26 +351,26 @@
             "description": "The core bundle of the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.179"
+                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.180"
             },
-            "time": "2024-08-20T11:43:21+00:00"
+            "time": "2024-09-05T12:36:41+00:00"
         },
         {
             "name": "dbp/relay-core-connector-oidc-bundle",
-            "version": "v0.1.33",
+            "version": "v0.1.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-connector-oidc-bundle.git",
-                "reference": "666c74b584e4b1a38503c765ca71af4c36741a1e"
+                "reference": "3a6701f6cfa839fadef339cfdc7cdcebf88c40a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-connector-oidc-bundle/zipball/666c74b584e4b1a38503c765ca71af4c36741a1e",
-                "reference": "666c74b584e4b1a38503c765ca71af4c36741a1e",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-connector-oidc-bundle/zipball/3a6701f6cfa839fadef339cfdc7cdcebf88c40a4",
+                "reference": "3a6701f6cfa839fadef339cfdc7cdcebf88c40a4",
                 "shasum": ""
             },
             "require": {
-                "dbp/relay-core-bundle": "^0.1.148",
+                "dbp/relay-core-bundle": "^0.1.180",
                 "ext-curl": "*",
                 "ext-gmp": "*",
                 "ext-json": "*",
@@ -419,9 +420,9 @@
             "description": "Core connector OIDC bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-connector-oidc-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-connector-oidc-bundle/tree/v0.1.33"
+                "source": "https://github.com/digital-blueprint/relay-core-connector-oidc-bundle/tree/v0.1.34"
             },
-            "time": "2024-08-01T11:18:48+00:00"
+            "time": "2024-09-05T12:44:44+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
@@ -1272,16 +1273,16 @@
         },
         {
             "name": "paragonie/sodium_compat",
-            "version": "v2.0.1",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/sodium_compat.git",
-                "reference": "f65c82939ab17aeff538f9bf6d582f65cc7f255e"
+                "reference": "a673d5f310477027cead2e2f2b6db5d8368157cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/sodium_compat/zipball/f65c82939ab17aeff538f9bf6d582f65cc7f255e",
-                "reference": "f65c82939ab17aeff538f9bf6d582f65cc7f255e",
+                "url": "https://api.github.com/repos/paragonie/sodium_compat/zipball/a673d5f310477027cead2e2f2b6db5d8368157cb",
+                "reference": "a673d5f310477027cead2e2f2b6db5d8368157cb",
                 "shasum": ""
             },
             "require": {
@@ -1296,6 +1297,11 @@
                 "ext-sodium": "Better performance, password hashing (Argon2i), secure memory management (memzero), and better security."
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
             "autoload": {
                 "files": [
                     "autoload.php"
@@ -1352,9 +1358,9 @@
             ],
             "support": {
                 "issues": "https://github.com/paragonie/sodium_compat/issues",
-                "source": "https://github.com/paragonie/sodium_compat/tree/v2.0.1"
+                "source": "https://github.com/paragonie/sodium_compat/tree/v2.1.0"
             },
-            "time": "2024-04-24T12:06:31+00:00"
+            "time": "2024-09-04T12:51:01+00:00"
         },
         {
             "name": "psr/cache",
@@ -8218,16 +8224,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "384af967d35b2162f69526c7276acadce534d0e1"
+                "reference": "d8ed7fffa66de1db0d2972267d8ed1d8fa0fe5a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/384af967d35b2162f69526c7276acadce534d0e1",
-                "reference": "384af967d35b2162f69526c7276acadce534d0e1",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d8ed7fffa66de1db0d2972267d8ed1d8fa0fe5a2",
+                "reference": "d8ed7fffa66de1db0d2972267d8ed1d8fa0fe5a2",
                 "shasum": ""
             },
             "require": {
@@ -8272,7 +8278,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-27T09:18:05+00:00"
+            "time": "2024-09-03T19:55:22+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
@@ -8721,16 +8727,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.30",
+            "version": "10.5.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b15524febac0153876b4ba9aab3326c2ee94c897"
+                "reference": "f069f46840445d37a4e6f0de8c5879598f9c4327"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b15524febac0153876b4ba9aab3326c2ee94c897",
-                "reference": "b15524febac0153876b4ba9aab3326c2ee94c897",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f069f46840445d37a4e6f0de8c5879598f9c4327",
+                "reference": "f069f46840445d37a4e6f0de8c5879598f9c4327",
                 "shasum": ""
             },
             "require": {
@@ -8744,7 +8750,7 @@
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.1",
-                "phpunit/php-code-coverage": "^10.1.15",
+                "phpunit/php-code-coverage": "^10.1.16",
                 "phpunit/php-file-iterator": "^4.1.0",
                 "phpunit/php-invoker": "^4.0.0",
                 "phpunit/php-text-template": "^3.0.1",
@@ -8802,7 +8808,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.30"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.32"
             },
             "funding": [
                 {
@@ -8818,7 +8824,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-13T06:09:37+00:00"
+            "time": "2024-09-04T13:33:39+00:00"
         },
         {
             "name": "react/cache",
