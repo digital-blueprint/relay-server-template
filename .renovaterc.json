@@ -12,6 +12,10 @@
   },
   "constraintsFiltering": "strict",
   "packageRules": [
+    {
+      "matchPackageNames": ["api-platform/core"],
+      "allowedVersions": "<4"
+    }
   ],
   "docker": {
     "enabled": false
