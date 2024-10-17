@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.2
+
+* Enable mariadb auto-upgrade for the dev docker setup. Otherwise it would fail to start with newer docker image versions.
+* Various dependency updates
+
 ## v0.3.1
 
 * Port from dbp/relay-auth-bundle to dbp/relay-core-connector-oidc-bundle
