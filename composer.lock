@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "api-platform/core",
-            "version": "v3.4.6",
+            "version": "v3.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "f251ed152d8c3709cef177a6ce5e0f34c7abb680"
+                "reference": "717c7e5d5410f1d8b26381cd546c70860e454d37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/f251ed152d8c3709cef177a6ce5e0f34c7abb680",
-                "reference": "f251ed152d8c3709cef177a6ce5e0f34c7abb680",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/717c7e5d5410f1d8b26381cd546c70860e454d37",
+                "reference": "717c7e5d5410f1d8b26381cd546c70860e454d37",
                 "shasum": ""
             },
             "require": {
@@ -223,9 +223,9 @@
             ],
             "support": {
                 "issues": "https://github.com/api-platform/core/issues",
-                "source": "https://github.com/api-platform/core/tree/v3.4.6"
+                "source": "https://github.com/api-platform/core/tree/v3.4.7"
             },
-            "time": "2024-11-15T09:41:19+00:00"
+            "time": "2024-11-22T11:02:47+00:00"
         },
         {
             "name": "brick/math",
@@ -289,16 +289,16 @@
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.191",
+            "version": "v0.1.192",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-bundle.git",
-                "reference": "bbc78e054ef3a350a3bbfb0a944dc0955ad43304"
+                "reference": "5d6d69da4d953ebbd1460367faf76475c5efb2c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/bbc78e054ef3a350a3bbfb0a944dc0955ad43304",
-                "reference": "bbc78e054ef3a350a3bbfb0a944dc0955ad43304",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/5d6d69da4d953ebbd1460367faf76475c5efb2c8",
+                "reference": "5d6d69da4d953ebbd1460367faf76475c5efb2c8",
                 "shasum": ""
             },
             "require": {
@@ -384,22 +384,22 @@
             "description": "The core bundle of the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.191"
+                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.192"
             },
-            "time": "2024-11-12T14:03:25+00:00"
+            "time": "2024-11-18T08:11:19+00:00"
         },
         {
             "name": "dbp/relay-core-connector-oidc-bundle",
-            "version": "v0.1.37",
+            "version": "v0.1.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-connector-oidc-bundle.git",
-                "reference": "9b9f89b4b9386ab5fed7f745613372ee903d92af"
+                "reference": "55a644b62758d868c39c04205f4264ded627a2cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-connector-oidc-bundle/zipball/9b9f89b4b9386ab5fed7f745613372ee903d92af",
-                "reference": "9b9f89b4b9386ab5fed7f745613372ee903d92af",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-connector-oidc-bundle/zipball/55a644b62758d868c39c04205f4264ded627a2cb",
+                "reference": "55a644b62758d868c39c04205f4264ded627a2cb",
                 "shasum": ""
             },
             "require": {
@@ -453,9 +453,9 @@
             "description": "Core connector OIDC bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-connector-oidc-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-connector-oidc-bundle/tree/v0.1.37"
+                "source": "https://github.com/digital-blueprint/relay-core-connector-oidc-bundle/tree/v0.1.38"
             },
-            "time": "2024-09-05T17:29:49+00:00"
+            "time": "2024-11-20T14:24:31+00:00"
         },
         {
             "name": "dbp/relay-maker-bundle",
