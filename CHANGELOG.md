@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.3
+
+* PHP 8.4 support
+
 ## v0.3.2
 
 * Enable mariadb auto-upgrade for the dev docker setup. Otherwise it would fail to start with newer docker image versions.
