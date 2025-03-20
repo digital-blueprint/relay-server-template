@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+* Drop support for PHP 8.1
+
 ## v0.3.3
 
 * PHP 8.4 support
