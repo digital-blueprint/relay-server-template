@@ -2,7 +2,7 @@
   "extends": [
     "config:base",
     "group:allNonMajor",
-    "schedule:weekends",
+    "schedule:monthly",
     ":automergePatch"
   ],
   "ignorePresets": [":prHourlyLimit2"],
