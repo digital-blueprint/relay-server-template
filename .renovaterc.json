@@ -1,6 +1,6 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     "group:allNonMajor",
     "schedule:monthly",
     ":automergePatch"
@@ -12,19 +12,28 @@
   "constraintsFiltering": "strict",
   "packageRules": [
     {
-      "matchPackagePrefixes": ["symfony/"],
-      "allowedVersions": "<7"
+      "matchCategories": [
+        "docker"
+      ],
+      "enabled": false
     },
     {
-      "matchPackageNames": ["api-platform/core"],
+      "allowedVersions": "<7",
+      "matchPackageNames": [
+        "symfony/{/,}**"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "api-platform/core"
+      ],
       "allowedVersions": "<4"
     },
     {
-      "matchPackageNames": ["phpunit/phpunit"],
+      "matchPackageNames": [
+        "phpunit/phpunit"
+      ],
       "allowedVersions": "<11"
     }
-  ],
-  "docker": {
-    "enabled": false
-  }
+  ]
 }
