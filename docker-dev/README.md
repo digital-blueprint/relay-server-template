@@ -1,13 +1,13 @@
 # Running with Docker
 
 This is simple docker-compose setup using docker with php-fpm and nginx to serve
-the symfony app.
+the Symfony app.
 
 ## Setup
 
 * `sudo apt install docker-compose-v2` to install docker-compose on Debian/Ubuntu
 * `sudo ./build.sh` - to build the docker images and install the PHP dependencies
-* `sudo docker compose up` - to run the server: http://127.0.0.1:8000
+* `sudo docker compose up` - to run the server: http://api.localhost:8000
 
 ## Running the Server
 
@@ -29,5 +29,5 @@ the symfony app.
 
 ## Links
 
-* Open <http://127.0.0.1:8000/> for the API Platform webpage
-* Open <http://localhost:8102/> for phpmyadmin
+* Open http://api.localhost:8000 for the API Platform webpage
+* Open http://phpmyadmin.localhost:8000 for phpmyadmin

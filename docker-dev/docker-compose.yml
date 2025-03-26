@@ -1,6 +1,19 @@
 version: "3.1"
 
 services:
+  traefik:
+    restart: unless-stopped
+    image: traefik:v3.3
+    command:
+      - "--log.level=INFO"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=true"
+      - "--entryPoints.http.address=:80"
+    ports:
+      - "127.0.0.1:8000:80"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
   webserver:
     image: nginx:alpine
     working_dir: /application
@@ -8,7 +21,10 @@ services:
       - ..:/application
       - ./webserver/nginx.conf:/etc/nginx/conf.d/default.conf
     ports:
-      - "8000:80"
+      - "8101:80"
+    labels:
+      - "traefik.http.routers.webserver-router.rule=Host(`api.localhost`) || Host(`localhost`) || Host(`127.0.0.1`)"
+      - "traefik.http.routers.webserver-router.entrypoints=http"
 
   php-fpm:
     environment:
@@ -70,6 +86,9 @@ services:
       - PMA_HOSTS=mariadb
     ports:
       - "8102:80"
+    labels:
+      - "traefik.http.routers.phpmyadmin-router.rule=Host(`phpmyadmin.localhost`)"
+      - "traefik.http.routers.phpmyadmin-router.entrypoints=http"
 
 volumes:
   mariadb-data:
