@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.6
+
+* Update to phpstan v2
+
 ## v0.3.5
 
 * docker: move to docker-compose v2
