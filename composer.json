@@ -72,13 +72,9 @@
         "phpstan": [
             "@php vendor/bin/phpstan analyze --ansi"
         ],
-        "psalm": [
-            "@php vendor/bin/psalm"
-        ],
         "lint": [
             "@composer run cs",
-            "@composer run phpstan",
-            "@composer run psalm"
+            "@composer run phpstan"
         ],
         "cs-fix": [
             "@php vendor/bin/php-cs-fixer --ansi fix"
@@ -112,7 +108,6 @@
         "symfony/phpunit-bridge": "^7.1.3",
         "symfony/stopwatch": "^6.4",
         "symfony/var-dumper": "^6.4",
-        "symfony/web-profiler-bundle": "^6.4",
-        "vimeo/psalm": "^5.22.2"
+        "symfony/web-profiler-bundle": "^6.4"
     }
 }
