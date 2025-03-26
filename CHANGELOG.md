@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.3.5
+
+* docker: move to docker-compose v2
+* docker: add a reverse proxy setup for local development
+* docker: fix phpmyadmin service configuration
+* Drop support for Psalm
+
 ## v0.3.4
 
 * Drop support for PHP 8.1
