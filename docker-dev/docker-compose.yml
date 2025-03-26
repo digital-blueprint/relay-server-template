@@ -77,11 +77,11 @@ services:
       - MARIADB_DISABLE_UPGRADE_BACKUP=1
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin/phpmyadmin:5
     depends_on:
       - mariadb
     environment:
-      - PMA_USER=db
+      - PMA_USER=user
       - PMA_PASSWORD=secret
       - PMA_HOSTS=mariadb
     ports:
