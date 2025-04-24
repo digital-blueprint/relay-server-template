@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.7
+
+* Update to api-platform 4.1
+* Drop support for PHP 8.1
+
 ## v0.3.6
 
 * Update to phpstan v2
