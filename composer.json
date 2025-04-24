@@ -6,8 +6,8 @@
     "require": {
         "php": ">=8.2",
         "ext-intl": "*",
-        "api-platform/core": "^3.2.21",
-        "dbp/relay-core-bundle": "^0.1.143",
+        "api-platform/core": "^3.4 || ^4.1",
+        "dbp/relay-core-bundle": "^0.1.210",
         "dbp/relay-core-connector-oidc-bundle": "^0.1.32",
         "dbp/relay-maker-bundle": "^0.1.10",
         "symfony/apache-pack": "^1.0.1",
