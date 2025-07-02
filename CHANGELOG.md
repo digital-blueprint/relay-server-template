@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.8
+
+* Drop support for api-platform 3.x
+* Update to phpunit 11
+
 ## v0.3.7
 
 * Update to api-platform 4.1
