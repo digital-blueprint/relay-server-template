@@ -22,3 +22,13 @@ cghooks.lock
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
