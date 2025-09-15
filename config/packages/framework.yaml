@@ -1,11 +1,12 @@
 framework:
-  secret: '%env(APP_SECRET)%'
+    secret: "%env(APP_SECRET)%"
 
 when@dev:
-  framework:
-    trusted_proxies: "REMOTE_ADDR"
-    trusted_headers: ['x-forwarded-for', 'x-forwarded-port', 'x-forwarded-proto']
+    framework:
+        trusted_proxies: "REMOTE_ADDR"
+        trusted_headers:
+            ["x-forwarded-for", "x-forwarded-port", "x-forwarded-proto"]
 
 when@test:
-  framework:
-    test: true
+    framework:
+        test: true

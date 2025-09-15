@@ -1,94 +1,94 @@
 version: "3.1"
 
 services:
-  traefik:
-    restart: unless-stopped
-    image: traefik:v3.3
-    command:
-      - "--log.level=INFO"
-      - "--providers.docker=true"
-      - "--providers.docker.exposedbydefault=true"
-      - "--entryPoints.http.address=:80"
-    ports:
-      - "127.0.0.1:8000:80"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+    traefik:
+        restart: unless-stopped
+        image: traefik:v3.3
+        command:
+            - "--log.level=INFO"
+            - "--providers.docker=true"
+            - "--providers.docker.exposedbydefault=true"
+            - "--entryPoints.http.address=:80"
+        ports:
+            - "127.0.0.1:8000:80"
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
 
-  webserver:
-    image: nginx:alpine
-    working_dir: /application
-    volumes:
-      - ..:/application
-      - ./webserver/nginx.conf:/etc/nginx/conf.d/default.conf
-    ports:
-      - "8101:80"
-    labels:
-      - "traefik.http.routers.webserver-router.rule=Host(`api.localhost`) || Host(`localhost`) || Host(`127.0.0.1`)"
-      - "traefik.http.routers.webserver-router.entrypoints=http"
+    webserver:
+        image: nginx:alpine
+        working_dir: /application
+        volumes:
+            - ..:/application
+            - ./webserver/nginx.conf:/etc/nginx/conf.d/default.conf
+        ports:
+            - "8101:80"
+        labels:
+            - "traefik.http.routers.webserver-router.rule=Host(`api.localhost`) || Host(`localhost`) || Host(`127.0.0.1`)"
+            - "traefik.http.routers.webserver-router.entrypoints=http"
 
-  php-fpm:
-    environment:
-      - TERM_PROGRAM=Hyper  # force colors for the symfony dumper
-    build:
-      context: php-fpm
-    depends_on:
-      - mariadb
-    working_dir: /application
-    volumes:
-      - ..:/application
-      - ./php-fpm/php-ini-overrides.ini:/etc/php/8.2/fpm/conf.d/99-overrides.ini
-      - ./php-fpm/php-fpm-overrides.conf:/etc/php/8.2/fpm/pool.d/z-overrides.conf
+    php-fpm:
+        environment:
+            - TERM_PROGRAM=Hyper # force colors for the symfony dumper
+        build:
+            context: php-fpm
+        depends_on:
+            - mariadb
+        working_dir: /application
+        volumes:
+            - ..:/application
+            - ./php-fpm/php-ini-overrides.ini:/etc/php/8.2/fpm/conf.d/99-overrides.ini
+            - ./php-fpm/php-fpm-overrides.conf:/etc/php/8.2/fpm/pool.d/z-overrides.conf
 
-  queue-worker:
-    environment:
-      - TERM_PROGRAM=Hyper  # force colors for the symfony dumper
-    build:
-      context: php-fpm
-    depends_on:
-      - mariadb
-    working_dir: /application
-    entrypoint: supervisord -c /etc/supervisor/conf.d/queue-worker.conf
-    volumes:
-      - ./php-fpm/queue-worker.conf:/etc/supervisor/conf.d/queue-worker.conf
-      - ..:/application
-      - ./php-fpm/php-ini-overrides.ini:/etc/php/8.2/cli/conf.d/99-overrides.ini
+    queue-worker:
+        environment:
+            - TERM_PROGRAM=Hyper # force colors for the symfony dumper
+        build:
+            context: php-fpm
+        depends_on:
+            - mariadb
+        working_dir: /application
+        entrypoint: supervisord -c /etc/supervisor/conf.d/queue-worker.conf
+        volumes:
+            - ./php-fpm/queue-worker.conf:/etc/supervisor/conf.d/queue-worker.conf
+            - ..:/application
+            - ./php-fpm/php-ini-overrides.ini:/etc/php/8.2/cli/conf.d/99-overrides.ini
 
-  cron:
-    build:
-      context: php-fpm
-    depends_on:
-      - mariadb
-    working_dir: /application
-    entrypoint: /cron.sh
-    volumes:
-      - ..:/application
-      - ./php-fpm/php-ini-overrides.ini:/etc/php/8.2/cli/conf.d/99-overrides.ini
+    cron:
+        build:
+            context: php-fpm
+        depends_on:
+            - mariadb
+        working_dir: /application
+        entrypoint: /cron.sh
+        volumes:
+            - ..:/application
+            - ./php-fpm/php-ini-overrides.ini:/etc/php/8.2/cli/conf.d/99-overrides.ini
 
-  mariadb:
-    image: mariadb:10.11
-    volumes:
-      - mariadb-data:/var/lib/mysql
-    environment:
-      - MYSQL_DATABASE=db
-      - MYSQL_USER=user
-      - MYSQL_PASSWORD=secret
-      - MYSQL_ROOT_PASSWORD=root-secret
-      - MARIADB_AUTO_UPGRADE=1
-      - MARIADB_DISABLE_UPGRADE_BACKUP=1
+    mariadb:
+        image: mariadb:10.11
+        volumes:
+            - mariadb-data:/var/lib/mysql
+        environment:
+            - MYSQL_DATABASE=db
+            - MYSQL_USER=user
+            - MYSQL_PASSWORD=secret
+            - MYSQL_ROOT_PASSWORD=root-secret
+            - MARIADB_AUTO_UPGRADE=1
+            - MARIADB_DISABLE_UPGRADE_BACKUP=1
 
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:5
-    depends_on:
-      - mariadb
-    environment:
-      - PMA_USER=user
-      - PMA_PASSWORD=secret
-      - PMA_HOSTS=mariadb
-    ports:
-      - "8102:80"
-    labels:
-      - "traefik.http.routers.phpmyadmin-router.rule=Host(`phpmyadmin.localhost`)"
-      - "traefik.http.routers.phpmyadmin-router.entrypoints=http"
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:5
+        depends_on:
+            - mariadb
+        environment:
+            - PMA_USER=user
+            - PMA_PASSWORD=secret
+            - PMA_HOSTS=mariadb
+        ports:
+            - "8102:80"
+        labels:
+            - "traefik.http.routers.phpmyadmin-router.rule=Host(`phpmyadmin.localhost`)"
+            - "traefik.http.routers.phpmyadmin-router.entrypoints=http"
 
 volumes:
-  mariadb-data:
+    mariadb-data:

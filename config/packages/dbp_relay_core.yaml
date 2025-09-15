@@ -1,4 +1,4 @@
 dbp_relay_core:
-  build_info: '%env(CORE_API_BUILDINFO)%'
-  build_info_url: '%env(CORE_API_BUILDINFO_URL)%'
-  logo_path: '%env(CORE_API_LOGO_PATH)%'
+    build_info: "%env(CORE_API_BUILDINFO)%"
+    build_info_url: "%env(CORE_API_BUILDINFO_URL)%"
+    logo_path: "%env(CORE_API_LOGO_PATH)%"

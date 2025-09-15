@@ -1,14 +1,13 @@
-version: '3'
+version: "3"
 services:
-  web:
-    image: relay-server-template
-    build: .
-    container_name: relay-server-template
-    restart: unless-stopped
-    ports:
-      # http://localhost:8081
-      - "8081:80"
-
+    web:
+        image: relay-server-template
+        build: .
+        container_name: relay-server-template
+        restart: unless-stopped
+        ports:
+            # http://localhost:8081
+            - "8081:80"
 #  web:
 #    image: ghcr.io/digital-blueprint/relay-server-template:main
 #    container_name: relay-server-template

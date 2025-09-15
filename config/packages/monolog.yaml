@@ -3,25 +3,25 @@ monolog:
         file-log:
             type: rotating_file
             level: notice
-            path: '%kernel.logs_dir%/%kernel.environment%.log'
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
             max_files: 10
 
 when@dev:
-  monolog:
-      handlers:
-          file-log:
-              type: rotating_file
-              level: debug
-              path: '%kernel.logs_dir%/%kernel.environment%.log'
-              max_files: 10
-          stdout-debug:
-              type: stream
-              path: 'php://stdout'
-              level: debug
-              channels: ['!event', '!request', '!security']
-              bubble: false
-          stdout-warn:
-              type: stream
-              path: 'php://stdout'
-              level: warning
-              include_stacktraces: true
+    monolog:
+        handlers:
+            file-log:
+                type: rotating_file
+                level: debug
+                path: "%kernel.logs_dir%/%kernel.environment%.log"
+                max_files: 10
+            stdout-debug:
+                type: stream
+                path: "php://stdout"
+                level: debug
+                channels: ["!event", "!request", "!security"]
+                bubble: false
+            stdout-warn:
+                type: stream
+                path: "php://stdout"
+                level: warning
+                include_stacktraces: true

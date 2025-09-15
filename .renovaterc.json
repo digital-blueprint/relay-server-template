@@ -1,33 +1,27 @@
 {
-  "extends": [
-    "config:recommended",
-    "group:allNonMajor",
-    "schedule:monthly",
-    ":automergePatch"
-  ],
-  "rangeStrategy": "update-lockfile",
-  "lockFileMaintenance": {
-    "enabled": true
-  },
-  "constraintsFiltering": "strict",
-  "packageRules": [
-    {
-      "matchCategories": [
-        "docker"
-      ],
-      "enabled": false
+    "extends": [
+        "config:recommended",
+        "group:allNonMajor",
+        "schedule:monthly",
+        ":automergePatch"
+    ],
+    "rangeStrategy": "update-lockfile",
+    "lockFileMaintenance": {
+        "enabled": true
     },
-    {
-      "allowedVersions": "<7",
-      "matchPackageNames": [
-        "symfony/{/,}**"
-      ]
-    },
-    {
-      "matchPackageNames": [
-        "phpunit/phpunit"
-      ],
-      "allowedVersions": "<11"
-    }
-  ]
+    "constraintsFiltering": "strict",
+    "packageRules": [
+        {
+            "matchCategories": ["docker"],
+            "enabled": false
+        },
+        {
+            "allowedVersions": "<7",
+            "matchPackageNames": ["symfony/{/,}**"]
+        },
+        {
+            "matchPackageNames": ["phpunit/phpunit"],
+            "allowedVersions": "<11"
+        }
+    ]
 }
