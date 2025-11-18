@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.10
+
+- Avoid api-platform/core creating files if installed after api-platform/symfony
+
 ## v0.3.9
 
 - Update dependencies
