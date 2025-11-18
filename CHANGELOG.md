@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.11
+
+- Revert to api-platform/core for now, too many installation issues
+  with bundles still depending on it.
+
 ## v0.3.10
 
 - Avoid api-platform/core creating files if installed after api-platform/symfony
