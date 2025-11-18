@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.9
+
+- Update dependencies
+- Move from api-platform/core to api-platform/symfony
+
 ## v0.3.8
 
 - Drop support for api-platform 3.x
