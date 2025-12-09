@@ -1,7 +1,7 @@
 FROM composer:2 AS composer
 RUN composer --version
 
-FROM debian:bookworm as build
+FROM debian:trixie AS build
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -66,4 +66,4 @@ COPY --chown=application --from=build /app /app
 RUN mkdir -p /app/var/cache/prod
 
 # change web root
-ENV WEB_DOCUMENT_ROOT /app/public
+ENV WEB_DOCUMENT_ROOT=/app/public

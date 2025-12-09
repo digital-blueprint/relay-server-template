@@ -1,4 +1,4 @@
-FROM debian:bookworm
+FROM debian:trixie
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -53,7 +53,7 @@ RUN echo 'user ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 RUN mkdir -p /home/user/.local/bin
 RUN curl -L https://github.com/composer/getcomposer.org/raw/main/web/download/2.7.1/composer.phar -o /home/user/.local/bin/composer
 RUN chmod a+x /home/user/.local/bin/composer
-ENV PATH "/home/user/.local/bin:${PATH}"
+ENV PATH="/home/user/.local/bin:${PATH}"
 
 USER user
 
