@@ -6,6 +6,7 @@ $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__)
     ->exclude('var')
     ->exclude('bundles')
+    ->notPath('config/reference.php')
     ->notPath('config/bundles.php')
 ;
 
