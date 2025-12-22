@@ -1249,7 +1249,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
  *         exists_parameter_name?: scalar|null, // The name of the query parameter to filter on nullable field values. // Default: "exists"
  *         order?: scalar|null, // The default order of results. // Default: "ASC"
  *         order_parameter_name?: scalar|null, // The name of the query parameter to order results. // Default: "order"
- *         order_nulls_comparison?: "nulls_smallest"|"nulls_largest"|"nulls_always_first"|"nulls_always_last"|null, // The nulls comparison strategy. // Default: null
+ *         order_nulls_comparison?: null, // The nulls comparison strategy. // Default: null
  *         pagination?: bool|array{
  *             enabled?: bool, // Default: true
  *             page_parameter_name?: scalar|null, // The default name of the parameter handling the page number. // Default: "page"
