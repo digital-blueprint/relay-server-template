@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.12
+
+- Move from api-platform/core to api-platform/symfony again
+- Update to Symfony 7.4
+
 ## v0.3.11
 
 - Revert to api-platform/core for now, too many installation issues
