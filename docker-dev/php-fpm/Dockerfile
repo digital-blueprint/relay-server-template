@@ -57,6 +57,6 @@ ENV PATH="/home/user/.local/bin:${PATH}"
 
 USER user
 
-CMD ["/usr/sbin/php-fpm8.2", "-O" ]
+CMD ["/usr/sbin/php-fpm8.4", "-O" ]
 EXPOSE 9000
 WORKDIR "/application"
