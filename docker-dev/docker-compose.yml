@@ -3,7 +3,7 @@ version: "3.1"
 services:
     traefik:
         restart: unless-stopped
-        image: traefik:v3.3
+        image: traefik:v3.6
         command:
             - "--log.level=INFO"
             - "--providers.docker=true"
