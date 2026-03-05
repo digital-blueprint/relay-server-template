@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.14
+
+- Fix symfony/runtime missing error
+
 ## v0.3.13
 
 - Drop support for Symfony 6
