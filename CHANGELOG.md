@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.13
+
+- Drop support for Symfony 6
+- Various Symfony recipe updates (app caches are now under var/share instead of var/cache)
+- No longer force UTC timezone by default, bundles are expected to be timezone agnostic.
+
 ## v0.3.12
 
 - Move from api-platform/core to api-platform/symfony again
