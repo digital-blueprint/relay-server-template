@@ -2,6 +2,7 @@
 /*.cache
 cghooks.lock
 .idea
+.shared
 
 ###> symfony/framework-bundle ###
 /.env.local

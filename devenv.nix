@@ -1,5 +1,3 @@
-{ pkgs, ... }:
-
 {
   # https://devenv.sh/supported-languages/php/
   languages.php = {
@@ -7,11 +5,7 @@
     version = "8.3";
   };
 
-  # https://devenv.sh/packages/
-  packages = with pkgs; [
-    just
-    zellij
-  ];
+  dotenv.disableHint = true;
 
   enterShell = ''
     echo "🔨 DBP Relay API Server Template dev shell"
@@ -19,29 +13,28 @@
   '';
 
   # https://devenv.sh/git-hooks/
-  git-hooks.hooks = {
-    # https://devenv.sh/reference/options/#git-hookshookstreefmt
-    # https://github.com/numtide/treefmt
-    # https://github.com/numtide/treefmt-nix
-    treefmt = {
-      enable = true;
-      settings.formatters = with pkgs; [
-        nodePackages.prettier
-        shfmt
-        nixfmt-rfc-style
-        statix
-        taplo
-        php83Packages.php-cs-fixer
-      ];
-    };
-
-    # https://devenv.sh/reference/options/#git-hookshooksdeadnix
-    # https://github.com/astro/deadnix
-    deadnix = {
-      enable = true;
-      settings = {
-        edit = true; # Allow to edit the file if it is not formatted
+  git-hooks = {
+    excludes = [
+      "config/secrets"
+      "vendor"
+      "bin"
+    ];
+    hooks = {
+      php-cs-fixer = {
+        enable = true;
+        args = [
+          "--config"
+          "./.php-cs-fixer.dist.php"
+        ];
+        excludes = [ "config/bundles.php" ];
+        # Don't spam so many messages
+        require_serial = true;
       };
+
+      prettier.args = [
+        "--tab-width"
+        "4"
+      ];
     };
   };
 
