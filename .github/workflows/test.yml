@@ -17,15 +17,15 @@ jobs:
                 php-versions: ["8.2", "8.3", "8.4", "8.5"]
         steps:
             - name: Set up php${{ matrix.php-versions }}
-              uses: shivammathur/setup-php@v2
+              uses: shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240 # 2.37.2
               with:
                   php-version: ${{ matrix.php-versions }}
                   extensions: ctype,curl,dom,gd,iconv,intl,json,mbstring,openssl,posix,sqlite,xml,zip,gmp
                   coverage: xdebug
             - name: Checkout code
-              uses: actions/checkout@v7
+              uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
             - name: Cache composer cache directory
-              uses: actions/cache@v6
+              uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
               with:
                   path: ${{ env.COMPOSER_CACHE_DIR }}
                   key: composer-cache
@@ -39,15 +39,15 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Set up php${{ matrix.php-versions }}
-              uses: shivammathur/setup-php@v2
+              uses: shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240 # 2.37.2
               with:
                   php-version: "8.2"
                   extensions: ctype,curl,dom,gd,iconv,intl,json,mbstring,openssl,posix,sqlite,xml,zip,gmp
                   coverage: xdebug
             - name: Checkout code
-              uses: actions/checkout@v7
+              uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
             - name: Cache composer cache directory
-              uses: actions/cache@v6
+              uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
               with:
                   path: ${{ env.COMPOSER_CACHE_DIR }}
                   key: composer-cache
@@ -67,11 +67,11 @@ jobs:
 
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v7
+              uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
             - name: Deploy and wait for completion
               if: github.ref == 'refs/heads/main'
-              uses: digital-blueprint/gitlab-pipeline-trigger-action@v1
+              uses: digital-blueprint/gitlab-pipeline-trigger-action@9ce6377a88205c23d9978fd64b6fb0bef7320be4 # v1.4.3
               with:
                   host: "gitlab.tugraz.at"
                   trigger_token: ${{ secrets.DEPLOY_TRIGGER_TOKEN }}
