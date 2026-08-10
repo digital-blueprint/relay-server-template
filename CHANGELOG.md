@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.15
+
+- Various minor updates
+
 ## v0.3.14
 
 - Fix symfony/runtime missing error
