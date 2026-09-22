@@ -7,7 +7,7 @@
         "php": ">=8.2",
         "ext-intl": "*",
         "api-platform/symfony": "^4.1",
-        "dbp/relay-core-bundle": "^0.1.215",
+        "dbp/relay-core-bundle": "^0.1.251",
         "dbp/relay-core-connector-oidc-bundle": "^0.1.43",
         "dbp/relay-maker-bundle": "^0.1.10",
         "symfony/apache-pack": "^1.0.1",
