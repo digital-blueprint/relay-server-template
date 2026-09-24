@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.17
+
+- Add support for api-platform 5.0 (and drop for 4.1)
+
 ## v0.3.16
 
 - Various minor updates
